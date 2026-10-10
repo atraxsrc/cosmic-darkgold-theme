@@ -231,6 +231,8 @@ so this repo stays small. The ones used with this rice:
 | [`cosmic/cosmic-astronaut-black-8000x4500.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-black-8000x4500.png) | 8000x4500, ~46 MB | Upscaled with Upscayl (ultramix-balanced) |
 | [`cosmic/cosmic-astronaut-black-starred-7488x4224.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-black-starred-7488x4224.png) | 7488x4224, ~7.5 MB | Upscaled with Upscayl (digital-art) |
 | [`harbor-dark/reaper-skull-13760x5760.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/harbor-dark/reaper-skull-13760x5760.jpg) | 13760x5760, ~5.2 MB | Upscaled with Upscayl (digital-art) |
+| [`cosmic/cosmic-astronaut-darkgold-3840x2160.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-darkgold-3840x2160.png) | 3840x2160 | COSMIC astronaut recoloured to gold and coral on charcoal |
+| [`reaper/reaper-skull-darkgold-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/reaper/reaper-skull-darkgold-3440x1440.png) | 3440x1440 | Reaper recoloured to bone and coral on charcoal |
 
 More Harbor Dark and gold astronaut variants are in
 [`cosmic/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic) and
