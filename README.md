@@ -410,8 +410,8 @@ repos created before the account default was on can still have them off;
 ## Setup
 
 ```bash
-git clone https://github.com/atraxsrc/Pop_OS-Cosmic-DarkGold.git
-cd Pop_OS-Cosmic-DarkGold
+git clone https://github.com/atraxsrc/cosmic-darkgold-theme.git
+cd cosmic-darkgold-theme
 
 # packages (apt list + manual installs, see the top of packages.txt)
 sudo add-apt-repository ppa:zhangsongcui3371/fastfetch

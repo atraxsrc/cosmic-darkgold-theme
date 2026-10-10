@@ -1,7 +1,7 @@
 # DarkGold (Harbor Dark) zsh layer: colours, aliases, prompt.
 #
 # Source it at the END of your own ~/.zshrc, after oh-my-zsh.sh:
-#   source /path/to/Pop_OS-Cosmic-DarkGold/zsh/darkgold.zsh
+#   source /path/to/cosmic-darkgold-theme/zsh/darkgold.zsh
 #
 # Keep machine-specific or private lines (PATH, scaling, nvm, ...) in your
 # own ~/.zshrc, not here.
