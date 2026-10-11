@@ -243,6 +243,8 @@ more Harbor Dark art is in
 
 Download one, then Settings → Desktop → Wallpaper → **Add image** → pick the file.
 
+![The reaper wallpaper on the DarkGold desktop, panel only](assets/wallpaper.png)
+
 ---
 
 ## Icons

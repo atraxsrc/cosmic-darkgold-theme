@@ -42,8 +42,8 @@ flowchart LR
 - [x] `./cosmic/install.sh` for fonts, **Kanagawa** icons and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: Oxygen-05-Vibrant-Red
-- [ ] Wallpaper: `cool-wallpapers/cosmic/darkgold/darkgold-reaper-skull`
-- [ ] Screenshot for the README
+- [x] Wallpaper: `cool-wallpapers/cosmic/darkgold/darkgold-reaper-skull`
+- [x] Screenshot for the README
 
 ## The baseline every rice shares
 
