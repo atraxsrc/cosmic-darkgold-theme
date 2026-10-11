@@ -11,7 +11,7 @@ and embedded under the title of each README.
 | Top panel | Workspaces, status applets, clock | Panel colours, applet icons |
 | Left column, top | COSMIC Terminal running `fastfetch` | Names the DE, terminal scheme and font, prints the palette dots with the rice name |
 | Left column, bottom | COSMIC Terminal with LazyVim on `cosmic/<Rice>.ron` | Terminal scheme, syntax colours, status line, and the file is the theme itself |
-| Bottom right | Postilla editing the rice's `README.md` | A libcosmic window: header bar, frosted glass, squared corners, accent, icon pack |
+| Bottom right | Postilla on `docs/showcase.md`, editor + preview | A libcosmic window: header bar, frosted glass, squared corners, accent, icon pack, and the note renders the palette table, a Mermaid diagram and a Typst formula |
 | Everything else | The rice's wallpaper | The recolour, uncovered on the right |
 
 Nothing else open. No Files, no browser, no btop, no notifications.
@@ -50,7 +50,10 @@ clear && fastfetch           # top pane
 nvim cosmic/<Rice>.ron       # bottom pane, scroll so the palette block is visible
 ```
 
-Postilla: File → Open → the rice's `README.md`, preview on if it has one.
+Postilla: open the rice repo as the vault, open `docs/showcase.md`, layout editor + preview
+(`Ctrl+2`). First import `cosmic-term/<Rice>-term.ron` in Settings → Appearance → Import
+theme and turn on painting the window with it, so the editor matches the terminal.
+Scroll the preview so the palette table and the diagram are both visible.
 
 ## PII check
 
