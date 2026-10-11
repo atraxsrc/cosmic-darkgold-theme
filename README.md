@@ -1,6 +1,6 @@
 <div align="center">
 
-# Pop!_OS · COSMIC · DarkGold
+# COSMIC · DarkGold
 
 Pop!_OS 24.04 on COSMIC in Harbor Dark gold: desktop, terminal, shell, Firefox, cursor.
 
