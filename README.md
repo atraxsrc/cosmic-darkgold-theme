@@ -82,6 +82,7 @@ Harbor Dark.
 │   │   └── userContent.css
 │   ├── install.sh
 │   └── README.md
+├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── scripts
 │   └── update_system.sh         # nala + flatpak, Harbor Dark ANSI
 ├── lsd
@@ -346,6 +347,23 @@ up any existing `~/.config/starship.toml` to `starship.toml.bak`.
 ./starship/install.sh
 ```
 
+### Neovim
+
+`nvim/` carries the rice into Neovim: a dependency-free colorscheme built from
+the palette (`nvim/colors/darkgold.lua`), a LazyVim spec that selects it and makes
+sure the treesitter parsers for the files in this repo are installed
+(`nvim/lua/plugins/darkgold.lua`), and a small RON syntax file so `cosmic/*.ron`
+is coloured even before the parser exists. `:terminal` inside Neovim uses the
+Harbor Dark scheme.
+
+```bash
+./nvim/install.sh
+# restart nvim; LazyVim switches to the darkgold colorscheme
+```
+
+Without LazyVim, copy `nvim/colors/darkgold.lua` to `~/.config/nvim/colors/` and
+run `:colorscheme darkgold`.
+
 ### btop
 
 `btop/DarkGold.theme` uses the same palette: charcoal background, coral highlights, brass titles.
@@ -444,6 +462,7 @@ chsh -s "$(command -v zsh)"
 ./bat/install.sh
 ./starship/install.sh
 ./fastfetch/install.sh
+./nvim/install.sh
 mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 
 # wallpaper

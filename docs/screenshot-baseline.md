@@ -39,6 +39,8 @@ Apply the whole rice first, or the shot documents the wrong thing:
 4. `./cursors/install.sh` where the rice ships one, then log out and in.
 5. `./zsh/install.sh` and `./fastfetch/install.sh`, then `exec zsh`.
 6. Wallpaper from the table above.
+7. `./nvim/install.sh`, then restart Neovim, so the LazyVim pane uses the rice colorscheme
+   and `.ron` files are highlighted.
 
 ## Terminal panes
 
