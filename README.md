@@ -94,6 +94,8 @@ Harbor Dark.
 ├── zsh
 │   ├── darkgold.zsh             # LS_COLORS, highlighting colours, aliases, starship
 │   └── install.sh
+├── docs
+│   └── screenshot-baseline.md   # the one-scene screenshot recipe shared by all the rices
 ├── packages.txt                 # what a fresh install needs (apt + manual)
 ├── LICENSE
 └── README.md
