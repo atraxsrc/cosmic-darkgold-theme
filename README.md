@@ -17,7 +17,7 @@ Inspired by [omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-
 </div>
 
 Firefox uses the [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/) add-on.
-Icons: [Kanagawa](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa).
+Icons: [Cosmic-DarkGold](https://github.com/atraxsrc/cosmic-icon-themes), Kanagawa recolored to this palette.
 Cursor: [Oxygen](https://github.com/wo2ni/Oxygen-Cursors) Vibrant Red, COSMIC-fixed.
 
 ---
@@ -70,6 +70,8 @@ Harbor Dark.
 │   ├── install.sh
 │   ├── uninstall.sh
 │   └── README.md
+├── icons
+│   └── install.sh               # Cosmic-DarkGold icon pack from cosmic-icon-themes
 ├── git-hooks
 │   ├── pre-commit               # global gitleaks hook for every repo
 │   ├── check-github.sh          # GitHub secret scanning / push protection report
@@ -134,12 +136,12 @@ parchment is unreadable (dark gold `#655628`). Upstream fix proposed in
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Normal UI`, monospace `Maple Mono Normal NFM` |
-| Icons | Kanagawa |
+| Icons | Cosmic-DarkGold-Gold |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Harbor Dark / Harbor Light |
 
 Install the [Maple fonts](https://github.com/subframe7536/maple-font) and the
-Kanagawa icons (see Icons below) and import the terminal schemes first, then:
+Cosmic-DarkGold icons (see Icons below) and import the terminal schemes first, then:
 
 ```bash
 ./cosmic/install.sh
@@ -254,11 +256,21 @@ Download one, then Settings → Desktop → Wallpaper → **Add image** → pick
 
 ## Icons
 
-[Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
-from [Fausto-Korpsvart/Kanagawa-GKT-Theme](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme).
+**Cosmic-DarkGold**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
+by Fausto Korpsvart recolored to this palette in
+[cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
+three colors: **Gold** `#C0AF7F` (default), **Red** `#E75A50` and **Dark** `#2A2A29` with gold symbols.
 
-Drop the icon pack into `~/.local/share/icons/` and pick it in COSMIC Settings
-→ Desktop → Appearance → Icons.
+![Cosmic-DarkGold folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-DarkGold.png)
+
+```bash
+./icons/install.sh                  # Gold folders
+./icons/install.sh --variant Red    # or Dark
+```
+
+It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
+installs it to `~/.local/share/icons/` and sets it as the COSMIC icon theme.
+Restart open apps afterwards (Files caches icons per window).
 
 ---
 
@@ -476,8 +488,8 @@ mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 # Settings → Wallpaper → Add image → a file from
 # https://github.com/atraxsrc/cool-wallpapers (see Wallpaper above)
 
-# icons
-# https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa
+# icons (Cosmic-DarkGold, see Icons above)
+./icons/install.sh
 
 # fonts (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
@@ -516,7 +528,7 @@ mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 | [starship](https://starship.rs/) | Prompt |
 | [lsd](https://github.com/lsd-rs/lsd) | `ls` with icons and colours |
 | [bat](https://github.com/sharkdp/bat) | `cat` with syntax highlighting (ANSI theme) |
-| [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) | Icon pack |
+| [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-DarkGold), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
 | [gitleaks](https://github.com/gitleaks/gitleaks) | Secret scan on every commit |
 | [Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors) | Cursor theme (KDE Oxygen designs), COSMIC-fixed |
 

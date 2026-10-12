@@ -19,5 +19,5 @@ gitleaks
 #   oh-my-zsh   https://ohmyz.sh/#install, then ./zsh/install.sh for the plugins
 #   starship    curl -sS https://starship.rs/install.sh | sh
 #   Maple fonts https://github.com/subframe7536/maple-font (Maple Mono Normal NF + Maple Normal UI)
-#   Kanagawa    https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa
+#   icons       ./icons/install.sh (Cosmic-DarkGold from github.com/atraxsrc/cosmic-icon-themes)
 #   neovim      optional, https://github.com/neovim/neovim/releases (the vi/vim/v aliases skip it if missing)

@@ -18,6 +18,6 @@ done
 
 cat <<'EOF'
 
-Done. Needs the Maple fonts and Kanagawa icons installed, and the Harbor Dark /
+Done. Needs the Maple fonts and Cosmic-DarkGold icons (./icons/install.sh) installed, and the Harbor Dark /
 Harbor Light terminal schemes imported, or COSMIC falls back to its defaults.
 EOF
