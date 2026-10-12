@@ -206,8 +206,11 @@ Spacing, corners, gaps and frosted glass match the dark theme.
 For a full light rice (parchment palette, own wallpapers, terminal, btop,
 nvim), see [cosmic-whitegold-theme](https://github.com/atraxsrc/cosmic-whitegold-theme).
 
-Not covered yet: the cosmic-darkgold-theme Firefox add-on and `firefox/chrome/` are
-dark only, and `update_system.sh` uses light text colours that are hard to
+The cosmic-darkgold-theme Firefox add-on and `firefox/chrome/` are dark only.
+For a light Firefox, use White Gold's
+[cosmic-whitegold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-whitegold-theme/).
+
+Not covered yet: `update_system.sh` uses light text colours that are hard to
 read on a light terminal.
 
 ---
