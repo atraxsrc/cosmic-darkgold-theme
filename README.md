@@ -11,7 +11,7 @@ Inspired by [omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-1B1B1B?style=for-the-badge&logo=popos&logoColor=C0AF7F)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-C0AF7F?style=for-the-badge)
 ![DarkGold](https://img.shields.io/badge/Theme-Harbor_Dark-a99b7a?style=for-the-badge)
-![Firefox](https://img.shields.io/badge/Firefox-DarkGold-e58980?style=for-the-badge&logo=firefox-browser&logoColor=white)
+![Firefox](https://img.shields.io/badge/Firefox-DarkGold-e75a50?style=for-the-badge&logo=firefox-browser&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-6d6d6d?style=for-the-badge)
 
 </div>
