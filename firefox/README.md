@@ -49,8 +49,19 @@ harbordark add-on linked above.
 ```
 
 Copies `chrome/` into your `*.default-release` profile, backs up anything it
-replaces, and adds the required pref to `user.js`. Then **fully restart**
+replaces, and adds two prefs to `user.js`: one so Firefox reads the
+stylesheets, one so the accent (URL bar ring, buttons) comes from the theme
+and not the desktop. Then **fully restart**
 Firefox. `userChrome.css` is parsed only at startup.
+
+To install into another profile (a test profile, say), pass its folder:
+
+```bash
+./install.sh ~/.mozilla/firefox/<profile>
+```
+
+Every rice's `install.sh` takes the same argument, so switching a test
+profile between rices is one command plus a restart.
 
 Manual equivalent:
 

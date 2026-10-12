@@ -19,6 +19,10 @@
     --newtab-primary-action-background: #C0AF7F !important;
     --newtab-primary-action-background-dimmed: rgba(192, 175, 127, 0.25) !important;
 
+    --color-accent-primary: #C0AF7F !important;
+    --color-accent-primary-hover: #E1CE98 !important;
+    --color-accent-primary-active: #E1CE98 !important;
+
     --newtab-focus-border: #C0AF7F !important;
     --newtab-focus-outline: #C0AF7F !important;
     --newtab-textbox-focus-color: #C0AF7F !important;

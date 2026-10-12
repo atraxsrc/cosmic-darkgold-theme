@@ -73,6 +73,24 @@ menupopup {
   --panel-text-color: #E1CE98 !important;
 }
 
+/* Firefox's own accent (Sign in button, toggles, focus rings) inside the
+   popups. Without this it follows the desktop accent, not the theme. */
+#appMenu-popup,
+#widget-overflow,
+#customizationui-widget-multiview,
+#protections-popup,
+#identity-popup,
+menupopup {
+  --color-accent-primary: #C0AF7F !important;
+  --color-accent-primary-hover: #E1CE98 !important;
+  --color-accent-primary-active: #E1CE98 !important;
+  --button-background-color-primary: #C0AF7F !important;
+  --button-background-color-primary-hover: #E1CE98 !important;
+  --button-background-color-primary-active: #E1CE98 !important;
+  --button-text-color-primary: #1B1B1B !important;
+  --focus-outline-color: #C0AF7F !important;
+}
+
 /* Drop GTK/native menuitem chrome so background-color actually paints.
    Without this, Cosmic/GTK hover is a 1-stop gray wash. */
 menupopup,
