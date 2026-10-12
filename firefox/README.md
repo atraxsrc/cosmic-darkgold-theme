@@ -5,13 +5,13 @@ Dark and Cosmic Night, with gray / lime swapped for gold and charcoal.
 
 Two layers, use one or both:
 
-1. **Theme (colours):** the [harbordark](https://addons.mozilla.org/en-US/firefox/addon/harbordark/)
-   add-on colours the toolbar, tabs and frame. This is the main look.
+1. **Theme (colours):** the [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/)
+   add-on (formerly harbordark) colours the toolbar, tabs and frame. This is the main look.
 2. **Stylesheets (optional, this folder):** `userChrome.css` / `userContent.css`
    add rounded corners, gold menu hover, gold accents and a blank new-tab
    grid on top of whatever theme is active.
 
-The stylesheets are written to sit on top of harbordark. They also work with
+The stylesheets are written to sit on top of cosmic-darkgold-theme. They also work with
 Firefox's built-in Dark theme if you would rather not install the add-on.
 
 ## Palette
@@ -40,7 +40,7 @@ firefox/
 ```
 
 No WebExtension theme package in this repo; the theme layer is the
-harbordark add-on linked above.
+cosmic-darkgold-theme add-on linked above.
 
 ## Setup
 

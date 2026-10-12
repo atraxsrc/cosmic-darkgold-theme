@@ -16,7 +16,7 @@ Inspired by [omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-
 
 </div>
 
-Firefox uses the [harbordark](https://addons.mozilla.org/en-US/firefox/addon/harbordark/) add-on.
+Firefox uses the [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/) add-on.
 Icons: [Kanagawa](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa).
 Cursor: [Oxygen](https://github.com/wo2ni/Oxygen-Cursors) Vibrant Red, COSMIC-fixed.
 
@@ -204,7 +204,7 @@ Spacing, corners, gaps and frosted glass match the dark theme.
 For a full light rice (parchment palette, own wallpapers, terminal, btop,
 nvim), see [cosmic-whitegold-theme](https://github.com/atraxsrc/cosmic-whitegold-theme).
 
-Not covered yet: the harbordark Firefox add-on and `firefox/chrome/` are
+Not covered yet: the cosmic-darkgold-theme Firefox add-on and `firefox/chrome/` are
 dark only, and `update_system.sh` uses light text colours that are hard to
 read on a light terminal.
 
@@ -215,8 +215,8 @@ read on a light terminal.
 Two layers:
 
 1. **Theme (colours):** install
-   **[harbordark on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/harbordark/)**.
-   This is the main look.
+   **[cosmic-darkgold-theme on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/)**
+   (formerly harbordark). This is the main look.
 2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, gold
    menu hover, gold accents and blank new-tab tiles on top of the add-on
    (they also work with Firefox's built-in Dark theme):
@@ -458,7 +458,7 @@ chsh -s "$(command -v zsh)"
 # Terminal → Color schemes → Light → Import cosmic-term/DarkGold-Light-term.ron
 
 # firefox add-on
-# https://addons.mozilla.org/en-US/firefox/addon/harbordark/
+# https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/
 
 # optional extra chrome
 # ./firefox/install.sh
@@ -496,7 +496,7 @@ mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 
 1. Appearance → Dark → pick or import another theme
 2. Terminal → View → Settings → Appearance → Color scheme (dark) → another scheme
-3. Disable the [harbordark](https://addons.mozilla.org/en-US/firefox/addon/harbordark/) add-on
+3. Disable the [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/) add-on
 4. Cursor: `./cursors/uninstall.sh` (back to the Pop default), then reboot
 5. Config files: each installer left a `*.bak` next to what it replaced
 
@@ -509,7 +509,7 @@ mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 | [Pop!_OS 24.04](https://pop.system76.com/) | Base OS by System76 |
 | [COSMIC DE](https://system76.com/cosmic) | Desktop environment |
 | [omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-harbordark-theme) | Palette inspiration |
-| [harbordark](https://addons.mozilla.org/en-US/firefox/addon/harbordark/) | Firefox theme |
+| [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/) | Firefox theme |
 | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
 | [oh-my-zsh](https://ohmyz.sh/) | zsh framework + plugins |

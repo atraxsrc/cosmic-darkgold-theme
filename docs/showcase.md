@@ -32,7 +32,7 @@ flowchart LR
     P --> S[zsh layer<br/>LS_COLORS, highlighting, starship]
     P --> E[Postilla<br/>syntax theme from the terminal scheme]
     T --> B[btop, bat, lsd, fastfetch]
-    D --> F[Firefox<br/>harbordark add-on + userChrome]
+    D --> F[Firefox<br/>cosmic-darkgold-theme add-on + userChrome]
 ```
 
 ## Setup, in order
