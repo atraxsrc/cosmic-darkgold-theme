@@ -51,6 +51,7 @@ Harbor Dark.
 │   ├── cosmic-term/             # scheme previews for cosmic-term/README.md
 │   ├── cursors/                 # cursor swatch for cursors/README.md
 │   └── screenshot.png           # README screenshot
+├── backgrounds/                 # wallpapers, darkgold-<subject>.png (see Wallpaper)
 ├── bat
 │   ├── config                   # --theme="ansi"
 │   └── install.sh
@@ -237,21 +238,28 @@ Fully quit Firefox afterward. Details: [`firefox/README.md`](firefox/README.md).
 
 ## Wallpaper
 
-Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers),
-so this repo stays small. The ones used with this rice:
+Wallpapers ship in [`backgrounds/`](backgrounds/), named `darkgold-<subject>.png`.
+Four are the Harbor Dark originals from
+[omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-harbordark-theme)
+(MIT), unchanged, since Harbor Dark is this palette. The rest are renders in gold
+and coral on charcoal: the eagle and the portrait subjects from The Greek
+(same author), the geisha from the Tokyo Night set in
+[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers), plus three new
+scenes.
 
-| File | Size | Notes |
-|------|------|-------|
-| [`cosmic/darkgold/darkgold-astronaut-3840x2160.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/darkgold/darkgold-astronaut-3840x2160.png) | 3840x2160 | COSMIC astronaut recoloured to gold and coral on charcoal |
-| [`cosmic/darkgold/darkgold-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/darkgold/darkgold-reaper-skull-3440x1440.png) | 3440x1440 | Reaper recoloured to bone and coral on charcoal |
-| [`harbor-dark/reaper-skull-13760x5760.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/harbor-dark/reaper-skull-13760x5760.jpg) | 13760x5760, ~5.2 MB | The original reaper, upscaled with Upscayl (digital-art) |
+| File | Size | What it is |
+|------|------|------------|
+| [`darkgold-reaper-skull.png`](backgrounds/darkgold-reaper-skull.png) | 3440x1440 | Harbor Dark reaper, the original, the one in the screenshot |
+| [`darkgold-hyundai-blueprint.png`](backgrounds/darkgold-hyundai-blueprint.png) | 3840x2160 | Hyundai N Vision 74 blueprint, the original |
+| [`darkgold-geisha-vivid.png`](backgrounds/darkgold-geisha-vivid.png) | 5328x3312 | Geisha in a patterned kimono inside a circle |
+| [`darkgold-eagle.png`](backgrounds/darkgold-eagle.png) | 5376x3312 | Ink eagle head with splashes |
+| [`darkgold-city.png`](backgrounds/darkgold-city.png) | 5376x3312 | Night skyline, one lit tower, a disc in the sky |
+| [`darkgold-panel.png`](backgrounds/darkgold-panel.png) | 5328x3312 | Layered circuit panels, one lit strip |
+| [`darkgold-tower.png`](backgrounds/darkgold-tower.png) | 5328x3312 | Isometric dark tower on a platform |
+| [`darkgold-harbor-space.png`](backgrounds/darkgold-harbor-space.png) | 7488x4224, 49 MB | Harbor Dark original: a ruined station drifting in space |
+| [`darkgold-space-monolith.png`](backgrounds/darkgold-space-monolith.png) | 3840x2160 | Harbor Dark original: a cliff-sized monolith, red glow |
 
-The rice's own folder is
-[`cosmic/darkgold/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/darkgold);
-more Harbor Dark art is in
-[`harbor-dark/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/harbor-dark).
-
-Download one, then Settings → Desktop → Wallpaper → **Add image** → pick the file.
+Settings → Desktop → Wallpaper → **Add image** → pick a file from `backgrounds/`.
 
 ![The reaper wallpaper on the DarkGold desktop, panel only](assets/wallpaper.png)
 
@@ -490,8 +498,7 @@ chsh -s "$(command -v zsh)"
 mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 
 # wallpaper
-# Settings → Wallpaper → Add image → a file from
-# https://github.com/atraxsrc/cool-wallpapers (see Wallpaper above)
+# Settings → Wallpaper → Add image → a file from backgrounds/ (see Wallpaper above)
 
 # icons (Cosmic-DarkGold, see Icons above)
 ./icons/install.sh

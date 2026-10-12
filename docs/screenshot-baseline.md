@@ -18,16 +18,17 @@ Nothing else open. No Files, no browser, no btop, no notifications.
 
 ## Wallpaper per rice
 
-All in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers), folder `cosmic/<rice>/`.
+The dark rices ship theirs in `backgrounds/` of their own repo. The light rices use
+[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers), folder `cosmic/<rice>/`.
 
 | Rice | File |
 |------|------|
-| DarkGold | `darkgold-reaper-skull-3440x1440.png` |
-| WhiteGold | `whitegold-samurai-3840x2166.png` |
-| TokyoNight | `tokyonight-astronaut-7168x4032.png` |
-| Monochrome | `cosmic-astronaut-gray-standard-5376x3072.jpg` (top of `cosmic/`) |
-| Noir | `noir-reaper-skull-3840x1609.png` |
-| Dossier | `dossier-eagle-3584x2016.png` |
+| DarkGold | `backgrounds/darkgold-reaper-skull.png` |
+| WhiteGold | cool-wallpapers `cosmic/whitegold/whitegold-samurai-3840x2166.png` |
+| TokyoNight | `backgrounds/tokyonight-cosmic-astronaut-black.png` |
+| Monochrome | `backgrounds/monochrome-cosmic-astronaut.png` |
+| Noir | `backgrounds/noir-reaper-skull.png` |
+| Dossier | cool-wallpapers `cosmic/dossier/dossier-eagle-3584x2016.png` |
 
 ## Before capturing
 
