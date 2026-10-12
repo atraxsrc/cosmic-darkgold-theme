@@ -3,6 +3,8 @@
 # COSMIC · DarkGold
 
 Pop!_OS 24.04 on COSMIC in Harbor Dark gold: desktop, terminal, shell, Firefox, cursor.
+The dark half of a pair; the light sibling is
+[cosmic-whitegold-theme](https://github.com/atraxsrc/cosmic-whitegold-theme).
 
 Inspired by [omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-harbordark-theme).
 
@@ -198,6 +200,9 @@ background).
 | Slate | `#77838A` | `#4A545A` |
 
 Spacing, corners, gaps and frosted glass match the dark theme.
+
+For a full light rice (parchment palette, own wallpapers, terminal, btop,
+nvim), see [cosmic-whitegold-theme](https://github.com/atraxsrc/cosmic-whitegold-theme).
 
 Not covered yet: the harbordark Firefox add-on and `firefox/chrome/` are
 dark only, and `update_system.sh` uses light text colours that are hard to
