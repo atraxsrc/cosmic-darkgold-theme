@@ -271,6 +271,8 @@ three colors: **Gold** `#C0AF7F` (default), **Red** `#E75A50` and **Dark** `#2A2
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
 installs it to `~/.local/share/icons/` and sets it as the COSMIC icon theme.
 Restart open apps afterwards (Files caches icons per window).
+Add `--system` to install to `/usr/share/icons` instead, for every user and the
+login screen (asks for sudo); `--user` is the default.
 
 ---
 
