@@ -242,23 +242,10 @@ Fully quit Firefox afterward. Details: [`firefox/README.md`](firefox/README.md).
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `darkgold-<subject>.png`.
 Four are the Harbor Dark originals from
 [omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-harbordark-theme)
-(MIT), unchanged, since Harbor Dark is this palette. The rest are renders in gold
-and coral on charcoal: the eagle and the portrait subjects from The Greek
-(same author), the geisha from the Tokyo Night set in
-[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers), plus three new
-scenes.
-
-| File | Size | What it is |
-|------|------|------------|
-| [`darkgold-reaper-skull.png`](backgrounds/darkgold-reaper-skull.png) | 3440x1440 | Harbor Dark reaper, the original, the one in the screenshot |
-| [`darkgold-hyundai-blueprint.png`](backgrounds/darkgold-hyundai-blueprint.png) | 3840x2160 | Hyundai N Vision 74 blueprint, the original |
-| [`darkgold-geisha-vivid.png`](backgrounds/darkgold-geisha-vivid.png) | 5328x3312 | Geisha in a patterned kimono inside a circle |
-| [`darkgold-eagle.png`](backgrounds/darkgold-eagle.png) | 5376x3312 | Ink eagle head with splashes |
-| [`darkgold-city.png`](backgrounds/darkgold-city.png) | 5376x3312 | Night skyline, one lit tower, a disc in the sky |
-| [`darkgold-panel.png`](backgrounds/darkgold-panel.png) | 5328x3312 | Layered circuit panels, one lit strip |
-| [`darkgold-tower.png`](backgrounds/darkgold-tower.png) | 5328x3312 | Isometric dark tower on a platform |
-| [`darkgold-harbor-space.png`](backgrounds/darkgold-harbor-space.png) | 7488x4224, 49 MB | Harbor Dark original: a ruined station drifting in space |
-| [`darkgold-space-monolith.png`](backgrounds/darkgold-space-monolith.png) | 3840x2160 | Harbor Dark original: a cliff-sized monolith, red glow |
+(MIT), unchanged, since Harbor Dark is this palette: the reaper (the one in the
+screenshot), the Hyundai blueprint, the harbor in space and the space monolith. The
+rest are renders in gold and coral on charcoal: the geisha, The Greek eagle, and three
+new scenes, city, panel and tower.
 
 Settings → Desktop → Wallpaper → **Add image** → pick a file from `backgrounds/`.
 
