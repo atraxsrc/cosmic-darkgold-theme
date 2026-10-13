@@ -36,7 +36,7 @@ Apply the whole rice first, or the shot documents the wrong thing:
 1. Appearance: import `cosmic/<Rice>.ron` into the right slot (Dark or Light).
 2. Terminal: import `cosmic-term/<Rice>-term.ron` and select it for the profile.
 3. `./cosmic/install.sh` for fonts, icons and the terminal look; icons installed.
-4. `./cursors/install.sh` where the rice ships one, then log out and in.
+4. `./cursors/install.sh`, then log out and in.
 5. `./zsh/install.sh` and `./fastfetch/install.sh`, then `exec zsh`.
 6. Wallpaper from the table above.
 7. `./nvim/install.sh`, then restart Neovim, so the LazyVim pane uses the rice colorscheme

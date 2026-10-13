@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# Install the Oxygen-05-Vibrant-Red cursor from this repo and make it active.
+# Install an Oxygen-DarkGold-<Variant> cursor from this repo and make it active.
 #
-#   ./cursors/install.sh              # install + activate
-#   ./cursors/install.sh --user       # theme to ~/.local/share/icons
-#   ./cursors/install.sh --size 32    # cursor size (default 24)
+#   ./cursors/install.sh                  # Gold (default) + activate
+#   ./cursors/install.sh --variant Red     # another colour, see --list
+#   ./cursors/install.sh --user           # theme to ~/.local/share/icons
+#   ./cursors/install.sh --size 32        # cursor size (default 24)
 #
 # COSMIC has no cursor picker yet, so the theme is set with XCURSOR_THEME in
 # /etc/environment, which cosmic-comp reads at login. The theme in this repo
@@ -14,14 +15,16 @@
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-THEME="Oxygen-05-Vibrant-Red"
+RICE="DarkGold"
+VARIANTS=(Gold Red Dark)
+VARIANT="Gold"
 SIZE="${XCURSOR_SIZE_OVERRIDE:-24}"
 DEST="/usr/share/icons"
 USER_MODE=false
 STAMP="$(date +%Y%m%d-%H%M%S)"
 
 usage() {
-  sed -n '2,6s/^# \{0,1\}//p' "${BASH_SOURCE[0]}"
+  sed -n '2,7s/^# \{0,1\}//p' "${BASH_SOURCE[0]}"
 }
 
 # run as root for system paths, as the user for --user
@@ -31,6 +34,9 @@ as_dest() {
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
+    --variant)   VARIANT="${2:-}"; shift ;;
+    --variant=*) VARIANT="${1#--variant=}" ;;
+    --list)      printf '%s\n' "${VARIANTS[@]}"; exit 0 ;;
     --user)    USER_MODE=true; DEST="$HOME/.local/share/icons" ;;
     --size)    SIZE="${2:-}"; shift ;;
     --size=*)  SIZE="${1#--size=}" ;;
@@ -40,6 +46,11 @@ while [[ $# -gt 0 ]]; do
   shift
 done
 [[ "$SIZE" =~ ^[0-9]+$ ]] || { echo "Size must be a number, got '$SIZE'"; exit 1; }
+if [[ " ${VARIANTS[*]} " != *" $VARIANT "* ]]; then
+  echo "Unknown variant '$VARIANT'. Pick one of: ${VARIANTS[*]}"
+  exit 1
+fi
+THEME="Oxygen-$RICE-$VARIANT"
 
 # 1. copy the theme ----------------------------------------------------------
 if $USER_MODE; then echo "Installing to $DEST"; else echo "Installing to $DEST (needs sudo)"; fi

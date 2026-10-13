@@ -41,7 +41,7 @@ flowchart LR
 - [x] Import `cosmic-term/DarkGold-term.ron`, pick **Harbor Dark** for the profile
 - [x] `./icons/install.sh` for the **Cosmic-DarkGold** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
-- [x] Cursor: Oxygen-05-Vibrant-Red
+- [x] Cursor: Oxygen-DarkGold-Gold
 - [x] Wallpaper: `backgrounds/darkgold-reaper-skull.png`
 - [x] Screenshot for the README
 

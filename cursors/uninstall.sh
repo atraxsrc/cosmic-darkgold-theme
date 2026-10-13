@@ -3,31 +3,37 @@
 #
 #   ./cursors/uninstall.sh
 #
-# Removes Oxygen-05-Vibrant-Red from /usr/share/icons and ~/.local/share/icons.
-# Cursor settings are reset only when it is the active cursor, which puts you
+# Removes every Oxygen-DarkGold-<Variant> from /usr/share/icons and ~/.local/share/icons.
+# Cursor settings are reset only when one of them is the active cursor, which puts you
 # back on the Pop!_OS default. Config files get a .bak-<timestamp> copy first.
 set -euo pipefail
 
-THEME="Oxygen-05-Vibrant-Red"
+RICE="DarkGold"
+VARIANTS=(Gold Red Dark)
 SYS="/usr/share/icons"
 USR="$HOME/.local/share/icons"
 STAMP="$(date +%Y%m%d-%H%M%S)"
 ACTIVE="$(sed -n 's/^XCURSOR_THEME=//p' /etc/environment 2>/dev/null | tail -n1)"
 
 found=false
-if [[ -d "$SYS/$THEME" ]]; then
-  echo "Removing $SYS/$THEME (needs sudo)"
-  sudo rm -rf -- "${SYS:?}/$THEME"
-  found=true
-fi
-if [[ -d "$USR/$THEME" ]]; then
-  echo "Removing $USR/$THEME"
-  rm -rf -- "${USR:?}/$THEME"
-  found=true
-fi
-$found || echo "$THEME is not installed"
+mine=false
+for v in "${VARIANTS[@]}"; do
+  THEME="Oxygen-$RICE-$v"
+  [[ "$ACTIVE" == "$THEME" ]] && mine=true
+  if [[ -d "$SYS/$THEME" ]]; then
+    echo "Removing $SYS/$THEME (needs sudo)"
+    sudo rm -rf -- "${SYS:?}/$THEME"
+    found=true
+  fi
+  if [[ -d "$USR/$THEME" ]]; then
+    echo "Removing $USR/$THEME"
+    rm -rf -- "${USR:?}/$THEME"
+    found=true
+  fi
+done
+$found || echo "No Oxygen-DarkGold-* cursor is installed"
 
-if [[ "$ACTIVE" != "$THEME" ]]; then
+if ! $mine; then
   echo "Done. Active cursor (${ACTIVE:-none}) left as is."
   exit 0
 fi

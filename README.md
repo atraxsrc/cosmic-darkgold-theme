@@ -18,7 +18,7 @@ Inspired by [omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-
 
 Firefox uses the [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/) add-on.
 Icons: [Cosmic-DarkGold](https://github.com/atraxsrc/cosmic-icon-themes), Kanagawa recolored to this palette.
-Cursor: [Oxygen](https://github.com/wo2ni/Oxygen-Cursors) Vibrant Red, COSMIC-fixed.
+Cursor: [Oxygen](https://github.com/wo2ni/Oxygen-Cursors) recoloured to the icon colours (Gold, Red, Dark), COSMIC-fixed.
 
 ---
 ![Pop!_OS COSMIC desktop with the DarkGold theme](assets/screenshot.png)
@@ -67,7 +67,8 @@ Harbor Dark.
 │   ├── DarkGold-term*.ron       # COSMIC Terminal schemes (Harbor Dark + variants)
 │   ├── DarkGold-Light-term*.ron # COSMIC Terminal schemes (Harbor Light + variants)
 │   └── README.md                # which scheme to pick, previews
-├── cursors/                     # Oxygen-05-Vibrant-Red, COSMIC-fixed
+├── cursors/                     # Oxygen-DarkGold-{Gold,Red,Dark}, COSMIC-fixed
+│   ├── recolour.py              # makes a variant from any coloured Oxygen theme
 │   ├── install.sh
 │   ├── uninstall.sh
 │   └── README.md
@@ -289,20 +290,17 @@ login screen (asks for sudo); `--user` is the default.
 
 ## Cursor
 
-**Oxygen-05-Vibrant-Red** (red `#E41414`, goes with Coral / Error) from the
-[Oxygen cursors](https://github.com/wo2ni/Oxygen-Cursors) (original KDE Oxygen designs),
-kept in `cursors/`.
-
-COSMIC has no cursor picker yet, so a script sets it:
+**Oxygen** cursors recoloured to the icon colours, one per folder colour of the
+Cosmic-DarkGold icon pack: **Gold** (default), **Red**, **Dark**. Patched with the cursor
+names COSMIC apps ask for. COSMIC has no cursor picker yet, so the script sets it:
 
 ```bash
-./cursors/install.sh
+./cursors/install.sh                      # Gold
+./cursors/install.sh --variant Red       # or another, see --list
 reboot
 ```
 
-The theme is already patched for the one real gotcha: Oxygen only has old X11
-cursor names, so without the fix the cursor is right in Firefox but **black in
-COSMIC's own apps**. Options, uninstall and the fix itself:
+Previews, what the script touches, how to undo it and how the colours are made:
 [`cursors/README.md`](cursors/README.md).
 
 ---
@@ -508,7 +506,9 @@ mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 ./cosmic/install.sh
 
 # cursor (then reboot), see cursors/README.md
-./cursors/install.sh
+./cursors/install.sh                      # Gold
+./cursors/install.sh --variant Red       # or another, see --list
+reboot
 
 # secret scan on every commit, every repo (see Git safety net above)
 ./git-hooks/install.sh
@@ -542,8 +542,9 @@ mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 | [bat](https://github.com/sharkdp/bat) | `cat` with syntax highlighting (ANSI theme) |
 | [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-DarkGold), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
 | [gitleaks](https://github.com/gitleaks/gitleaks) | Secret scan on every commit |
-| [Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors) | Cursor theme (KDE Oxygen designs), COSMIC-fixed |
+| [Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors) | Cursor theme (KDE Oxygen designs), recoloured to the icon colours, COSMIC-fixed |
 
 ## License
 
-MIT
+MIT. The cursor artwork keeps the terms of KDE's Oxygen project, see
+[`cursors/README.md`](cursors/README.md).
