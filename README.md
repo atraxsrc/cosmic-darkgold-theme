@@ -74,10 +74,6 @@ Harbor Dark.
 │   └── README.md
 ├── icons
 │   └── install.sh               # Cosmic-DarkGold icon pack from cosmic-icon-themes
-├── git-hooks
-│   ├── pre-commit               # global gitleaks hook for every repo
-│   ├── check-github.sh          # GitHub secret scanning / push protection report
-│   └── install.sh
 ├── fastfetch
 │   ├── config.jsonc             # Harbor Dark fastfetch config
 │   ├── cosmic.txt               # COSMIC logo
@@ -409,40 +405,11 @@ chmod +x scripts/update_system.sh
 
 ## Git safety net
 
-> This section grew into its own repo, **[git-safety-net](https://github.com/atraxsrc/git-safety-net)**:
-> the same hook plus `scan.sh` (scan any repo's history and files), `status.sh`
-> (am I protected?), a cheat sheet and a full walkthrough for when something
-> gets flagged.
-
-`git-hooks/pre-commit` scans every commit in every repo on the machine with
-[gitleaks](https://github.com/gitleaks/gitleaks) and blocks it if a staged
-change looks like a secret (API keys, tokens, private keys). It then runs the
-repo's own `.git/hooks/pre-commit` if there is one, so repos with a
-`.pre-commit-config.yaml` keep working. Works with gitleaks 8.16 (Ubuntu 24.04
-apt) and 8.19+.
-
-`install.sh` copies it to `~/.git-hooks` and sets git's global
-`core.hooksPath`, so new clones are covered without any per-repo setup.
-Run `pre-commit install` in repos that use it first: pre-commit refuses to
-install once `core.hooksPath` is set.
-
-```bash
-./git-hooks/install.sh
-# bypass once, only if you are sure it is a false positive:
-git commit --no-verify
-# undo
-git config --global --unset core.hooksPath
-```
-
-`check-github.sh` checks the GitHub side for every repo you own (needs `gh auth
-login`): secret scanning and push protection status plus open alerts. Public
-repos created before the account default was on can still have them off;
-`--fix` turns both on. Private personal repos show `n/a`, the hook covers them.
-
-```bash
-./git-hooks/check-github.sh          # report
-./git-hooks/check-github.sh --fix    # report + enable where missing
-```
+The gitleaks pre-commit hook that used to live here grew into its own repo,
+**[git-safety-net](https://github.com/atraxsrc/git-safety-net)**: the hook,
+`scan.sh` for any repo's history, `status.sh` (am I protected?), a cheat sheet
+and a walkthrough. Install it from there; this repo's `.pre-commit-config.yaml`
+runs gitleaks on its own commits either way.
 
 ---
 
@@ -497,8 +464,7 @@ mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 ./cursors/install.sh --variant Red       # or another, see --list
 reboot
 
-# secret scan on every commit, every repo (see Git safety net above)
-./git-hooks/install.sh
+# secret scan on every commit, every repo: https://github.com/atraxsrc/git-safety-net
 ```
 
 ---
