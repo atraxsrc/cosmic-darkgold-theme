@@ -57,6 +57,9 @@ Harbor Dark.
 │   └── install.sh
 ├── btop
 │   └── DarkGold.theme           # btop colour theme
+├── claude-desktop
+│   ├── cosmic-darkgold.jsonc    # Claude Desktop theme (claude-desktop-extra), dark + light
+│   └── install.sh
 ├── cosmic
 │   ├── DarkGold.ron             # COSMIC Appearance import (Dark)
 │   ├── DarkGold-Light.ron       # COSMIC Appearance import (Light)
@@ -230,6 +233,27 @@ chmod +x firefox/install.sh
 ```
 
 Fully quit Firefox afterward. Details: [`firefox/README.md`](firefox/README.md).
+
+---
+
+## Claude Desktop
+
+For the unofficial [claude-desktop-extra](https://github.com/patrickjaja/claude-desktop-extra)
+Linux build. `claude-desktop/cosmic-darkgold.jsonc` is one theme with both halves:
+DarkGold in dark mode and White Gold in light mode, so Claude's own
+Settings → Appearance toggle switches between the two rices.
+Colours come from `cosmic/*.ron`, contrast-checked (text and button text
+4.5:1, accents 3:1).
+
+```bash
+./claude-desktop/install.sh
+```
+
+It copies the file into `~/.config/Claude/themes.d/`. Then press
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-darkgold**.
+
+The same file ships in [`cosmic-whitegold-theme`](https://github.com/atraxsrc/cosmic-whitegold-theme),
+so installing from either repo gives the same theme.
 
 ---
 
@@ -439,6 +463,9 @@ chsh -s "$(command -v zsh)"
 
 # optional extra chrome
 # ./firefox/install.sh
+
+# claude desktop (claude-desktop-extra), then Ctrl+Shift+T
+./claude-desktop/install.sh
 
 # shell + terminal tools (see Terminal extras above)
 ./zsh/install.sh
