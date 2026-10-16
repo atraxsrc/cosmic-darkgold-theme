@@ -137,3 +137,8 @@ $NAME is active. Left to do by hand (skip what is already done):
   6. exec zsh, restart Neovim
   Cursor (optional, sudo + reboot): ./cursors/install.sh
 EOF
+for tg in telegram/*.tdesktop-theme; do
+  if [[ -f "$tg" ]]; then
+    echo "  Telegram (optional): Settings → Chat Settings → Chat wallpaper → Choose from file → $tg"
+  fi
+done

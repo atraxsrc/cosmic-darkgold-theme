@@ -88,6 +88,10 @@ Harbor Dark.
 │   ├── install.sh
 │   └── README.md
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
+├── telegram
+│   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
+│   ├── cosmic-darkgold.tdesktop-theme  # built theme, open this in Telegram
+│   └── build.sh                 # rebuilds it, optionally with a wallpaper
 ├── scripts
 │   ├── update_system.sh         # nala + flatpak, Harbor Dark ANSI
 │   └── switch.sh                # make this the active rice (see Switching rice)
@@ -255,6 +259,36 @@ It copies the file into `~/.config/Claude/themes.d/`. Then press
 
 The same file ships in [`cosmic-whitegold-theme`](https://github.com/atraxsrc/cosmic-whitegold-theme),
 so installing from either repo gives the same theme.
+
+---
+
+## Telegram
+
+`telegram/cosmic-darkgold.tdesktop-theme` is a Telegram Desktop theme: steel
+text (the Harbor Dark Steel shade, lifted to `#A3AAAD` for 4.5:1 on hover and
+bubble colours) on a charcoal chat list and background, dark-grey incoming and
+warm-brown outgoing bubbles, gold for the accent, links, unread badges and
+buttons (with charcoal text on them), brass for online status and read ticks.
+Group member names use the rice's terminal colours. Text and badge colours are
+contrast-checked at 4.5:1 or better, except disabled menu items.
+
+Settings → Chat Settings → Chat wallpaper → **Choose from file** →
+`telegram/cosmic-darkgold.tdesktop-theme` → **Apply this theme**.
+
+The colours live in `telegram/colors.tdesktop-theme`, which is plain text;
+`build.sh` zips it with the chat background into the `.tdesktop-theme`. The
+background is the plain window colour; to put a wallpaper behind the chat instead
+(ImageMagick re-encodes it to a 2560px JPEG, Telegram caps theme files at 5 MB):
+
+```bash
+./telegram/build.sh --wallpaper backgrounds/darkgold-anime.png
+```
+
+Built against Telegram Desktop 7.3.1. Calls, group calls, statistics charts and
+premium badges keep Telegram's own colours.
+
+Telegram has no dark / light pairing, so White Gold, the light half, ships its
+own theme.
 
 ---
 
@@ -476,6 +510,9 @@ chsh -s "$(command -v zsh)"
 
 # claude desktop (claude-desktop-extra), then Ctrl+Shift+T
 ./claude-desktop/install.sh
+
+# telegram desktop
+# Settings → Chat Settings → Chat wallpaper → Choose from file → telegram/cosmic-darkgold.tdesktop-theme
 
 # shell + terminal tools (see Terminal extras above)
 ./zsh/install.sh
