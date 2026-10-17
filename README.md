@@ -92,6 +92,11 @@ Harbor Dark.
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
 │   ├── cosmic-darkgold.tdesktop-theme  # built theme, open this in Telegram
 │   └── build.sh                 # rebuilds it, optionally with a wallpaper
+├── vscode
+│   ├── themes/                  # Cursor / VS Code colour themes, DarkGold (dark) + White Gold (light)
+│   ├── package.json             # extension manifest
+│   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
+│   └── README.md
 ├── scripts
 │   ├── update_system.sh         # nala + flatpak, Harbor Dark ANSI
 │   └── switch.sh                # make this the active rice (see Switching rice)
@@ -259,6 +264,30 @@ It copies the file into `~/.config/Claude/themes.d/`. Then press
 
 The same file ships in [`cosmic-whitegold-theme`](https://github.com/atraxsrc/cosmic-whitegold-theme),
 so installing from either repo gives the same theme.
+
+---
+
+## Cursor editor
+
+`vscode/` is a colour theme extension for [Cursor](https://cursor.com) with
+both halves of the pair: **Cosmic DarkGold** and **Cosmic White Gold**. It is a plain
+VS Code theme extension, so VS Code and VSCodium take it too, and the same
+folder ships in cosmic-whitegold-theme. Code is coloured the way Neovim is in
+each rice; the workbench takes the desktop's window and container colours,
+with the accent on the active tab, buttons and menu highlight, and the
+integrated terminal uses the COSMIC Terminal scheme. Cursor builds its Agent
+and chat panels from the same theme colours, so they follow along.
+
+```bash
+./vscode/install.sh
+```
+
+It packs `vscode/` into a `.vsix` and installs it with
+`cursor --install-extension`; run it again after editing the theme. Then press
+<kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>T</kbd> in Cursor and pick
+**Cosmic DarkGold**. Three lines in Cursor's `settings.json` make it follow
+COSMIC's Dark / Light toggle between DarkGold and White Gold; they, the colours and
+the contrast notes are in [`vscode/README.md`](vscode/README.md).
 
 ---
 
@@ -510,6 +539,9 @@ chsh -s "$(command -v zsh)"
 
 # claude desktop (claude-desktop-extra), then Ctrl+Shift+T
 ./claude-desktop/install.sh
+
+# cursor editor, then Ctrl+K Ctrl+T → Cosmic DarkGold
+./vscode/install.sh
 
 # telegram desktop
 # Settings → Chat Settings → Chat wallpaper → Choose from file → telegram/cosmic-darkgold.tdesktop-theme

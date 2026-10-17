@@ -1,0 +1,46 @@
+{
+  "name": "cosmic-darkgold-theme",
+  "displayName": "Cosmic DarkGold / Cosmic White Gold",
+  "description": "Dark and light colour themes from the COSMIC DarkGold / White Gold rice pair, syntax as in their Neovim schemes.",
+  "version": "1.0.0",
+  "publisher": "atraxsrc",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1B1B1B",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atraxsrc/cosmic-darkgold-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "cosmic",
+    "darkgold",
+    "whitegold",
+    "cursor"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cosmic DarkGold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cosmic-darkgold-color-theme.json"
+      },
+      {
+        "label": "Cosmic White Gold",
+        "uiTheme": "vs",
+        "path": "./themes/cosmic-whitegold-color-theme.json"
+      }
+    ]
+  }
+}
