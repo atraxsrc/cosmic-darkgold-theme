@@ -142,3 +142,6 @@ for tg in telegram/*.tdesktop-theme; do
     echo "  Telegram (optional): Settings → Chat Settings → Chat wallpaper → Choose from file → $tg"
   fi
 done
+if [[ -f brave/theme/manifest.json ]]; then
+  echo "  Brave (optional): brave://extensions → Developer mode → Load unpacked → $R/brave/theme"
+fi

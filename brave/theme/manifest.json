@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic DarkGold",
+  "version": "1.0",
+  "description": "Charcoal theme from the COSMIC DarkGold rice: gold icons, one coral accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [27, 27, 27],
+      "frame_inactive": [27, 27, 27],
+      "frame_incognito": [27, 27, 27],
+      "frame_incognito_inactive": [27, 27, 27],
+      "background_tab": [27, 27, 27],
+      "background_tab_inactive": [27, 27, 27],
+      "background_tab_incognito": [27, 27, 27],
+      "background_tab_incognito_inactive": [27, 27, 27],
+      "toolbar": [42, 42, 41],
+      "tab_text": [233, 105, 96],
+      "tab_background_text": [192, 175, 127],
+      "tab_background_text_inactive": [192, 175, 127],
+      "tab_background_text_incognito": [192, 175, 127],
+      "tab_background_text_incognito_inactive": [192, 175, 127],
+      "bookmark_text": [239, 235, 220],
+      "toolbar_button_icon": [192, 175, 127],
+      "omnibox_background": [60, 60, 57],
+      "omnibox_text": [239, 235, 220],
+      "ntp_background": [27, 27, 27],
+      "ntp_text": [239, 235, 220],
+      "ntp_link": [233, 105, 96]
+    }
+  }
+}

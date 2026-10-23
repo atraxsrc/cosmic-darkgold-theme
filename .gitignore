@@ -5,3 +5,6 @@
 *.zip
 *.xpi
 *.vsix
+*.crx
+*.pem
+Cached Theme.pak
