@@ -7,7 +7,7 @@ Two layers, use one or both:
 
 1. **Theme (colours):** the [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/)
    add-on (formerly harbordark) colours the toolbar, tabs and frame. This is the main look.
-2. **Stylesheets (optional, this folder):** `userChrome.css` / `userContent.css`
+2. **Stylesheets (optional):** `chrome/userChrome.css` / `userContent.css`
    add rounded corners, gold menu hover, gold accents and a blank new-tab
    grid on top of whatever theme is active.
 
@@ -33,14 +33,46 @@ Firefox's built-in Dark theme if you would rather not install the add-on.
 
 ```
 firefox/
+├── theme/            WebExtension theme source (cosmic-darkgold-theme)
+│   ├── manifest.json     the 37 colour keys of the published add-on
+│   └── icons/            32 / 48 / 64 / 96 / 128, the pair's samurai (shared with White Gold)
 ├── chrome/
 │   ├── userChrome.css    browser UI: rounded corners, gold menu hover
 │   └── userContent.css   new tab page: gold accents, blank shortcut tiles
 └── install.sh            copies chrome/ into the default profile
 ```
 
-No WebExtension theme package in this repo; the theme layer is the
-cosmic-darkgold-theme add-on linked above.
+## Theme
+
+`theme/` is the source of the cosmic-darkgold-theme add-on, the baseline the
+other rices' Firefox themes copy. Icons take the calm accent (gold), and
+everything "hot" (tab line, pressed button, menu and sidebar selection,
+attention, the focused URL bar ring and URL bar text selection) takes the loud
+one (coral). Loading takes gold. Every text colour clears WCAG AA (4.5:1) on
+its background; icons, the tab line and the URL bar ring clear 3:1.
+
+| Hex       | Where in the theme                          |
+|-----------|---------------------------------------------|
+| `#1B1B1B` | Frame, new tab, toolbar edges, text on coral selections |
+| `#2A2A29` | Toolbar, active tab, menus                  |
+| `#3C3C39` | URL bar field, button hover, separators, sidebar border |
+| `#EFEBDC` | Body text                                   |
+| `#A99B7A` | Inactive tab text, menu border              |
+| `#C0AF7F` | Icons, loading                              |
+| `#E75A50` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, attention |
+
+The colours are the published 1.3 exactly. The manifest is 1.4 because it adds
+a `description` and the `icons` (1.3 had none) and drops 1.3's blank
+background image, a leftover from Firefox Color.
+
+Build the package:
+
+```bash
+cd theme && zip -r -X ../cosmic-darkgold.zip . -x '.*'
+```
+
+Try it without installing: `about:debugging#/runtime/this-firefox` → **Load
+Temporary Add-on** → pick `theme/manifest.json`. It is gone on restart.
 
 ## Setup
 

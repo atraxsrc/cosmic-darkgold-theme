@@ -1,0 +1,59 @@
+{
+  "manifest_version": 2,
+  "name": "cosmic-darkgold-theme",
+  "version": "1.4",
+  "description": "Charcoal theme from the COSMIC DarkGold rice: gold icons, one coral accent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{46dee3b3-32c7-483a-a52d-8d2d372a6018}"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "toolbar": "#2a2a29",
+      "toolbar_text": "#efebdc",
+      "frame": "#1b1b1b",
+      "tab_background_text": "#a99b7a",
+      "toolbar_field": "#3c3c39",
+      "toolbar_field_text": "#efebdc",
+      "tab_line": "#e75a50",
+      "popup": "#2a2a29",
+      "popup_text": "#efebdc",
+      "button_background_active": "#e75a50",
+      "button_background_hover": "#3c3c39",
+      "frame_inactive": "#1b1b1b",
+      "icons_attention": "#e75a50",
+      "icons": "#c0af7f",
+      "ntp_background": "#1b1b1b",
+      "ntp_text": "#efebdc",
+      "popup_border": "#a99b7a",
+      "popup_highlight_text": "#1b1b1b",
+      "popup_highlight": "#e75a50",
+      "sidebar_border": "#3c3c39",
+      "sidebar_highlight_text": "#1b1b1b",
+      "sidebar_highlight": "#e75a50",
+      "sidebar_text": "#efebdc",
+      "tab_background_separator": "#3c3c39",
+      "tab_loading": "#c0af7f",
+      "tab_selected": "#2a2a29",
+      "tab_text": "#efebdc",
+      "toolbar_bottom_separator": "#1b1b1b",
+      "toolbar_field_border_focus": "#e75a50",
+      "toolbar_field_border": "#3c3c39",
+      "toolbar_field_focus": "#3c3c39",
+      "toolbar_field_highlight_text": "#1b1b1b",
+      "toolbar_field_highlight": "#e75a50",
+      "toolbar_field_separator": "#3c3c39",
+      "toolbar_field_text_focus": "#efebdc",
+      "toolbar_top_separator": "#1b1b1b",
+      "toolbar_vertical_separator": "#3c3c39"
+    }
+  }
+}

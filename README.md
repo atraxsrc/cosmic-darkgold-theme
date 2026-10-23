@@ -85,6 +85,7 @@ Harbor Dark.
 │   ├── cosmic.txt               # COSMIC logo
 │   └── install.sh
 ├── firefox
+│   ├── theme                    # cosmic-darkgold-theme add-on source (manifest + icons)
 │   ├── chrome
 │   │   ├── userChrome.css
 │   │   └── userContent.css

@@ -32,7 +32,7 @@ macOS refuse `.crx` files from outside the store, so use Load unpacked there.
 ## Palette
 
 Same roles as Noir's Brave theme: icons and inactive tabs take gold, the
-active tab text takes coral. The Firefox add-on keeps its inactive tabs on
+active tab text takes coral. The Firefox theme keeps its inactive tabs on
 `#A99B7A` and its active tab on the text colour; Brave puts both accents on
 the tabs, as Noir does. The coral is `#E96960`, a touch lighter than the
 rice's `#E75A50` (4.09:1 on the toolbar), so the active tab text clears 4.5:1.
