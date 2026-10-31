@@ -2,6 +2,8 @@
 
 # COSMIC · DarkGold
 
+![DarkGold palette](assets/palette.png)
+
 Pop!_OS 24.04 on COSMIC in Harbor Dark gold: desktop, terminal, shell, Firefox, Brave, cursor.
 The dark half of a pair; the light sibling is
 [cosmic-whitegold-theme](https://github.com/atraxsrc/cosmic-whitegold-theme).
@@ -50,6 +52,7 @@ Harbor Dark.
 ├── assets
 │   ├── cosmic-term/             # scheme previews for cosmic-term/README.md
 │   ├── cursors/                 # cursor swatch for cursors/README.md
+│   ├── palette.png              # the 16 terminal colours, under the title
 │   └── screenshot.png           # README screenshot
 ├── backgrounds/                 # wallpapers, darkgold-<subject>.png (see Wallpaper)
 ├── bat
