@@ -6,11 +6,11 @@ rice's icon colours: one per folder colour of the
 [Cosmic-DarkGold](https://github.com/atraxsrc/cosmic-icon-themes) icon pack, **Gold**, **Red**, **Dark**.
 All patched so they work in COSMIC's own apps.
 
-| Variant | Preview | Body | Contrast on `#1B1B1B` | Goes with |
+| Variant | Preview | Body | Contrast on ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B` | Goes with |
 | ------- | ------- | ---- | ------------------- | --------- |
-| **Gold** (default) | ![](../assets/cursors/Oxygen-DarkGold-Gold.png) | `#C0AF7F` | 7.9:1 | Gold folders |
-| **Red** | ![](../assets/cursors/Oxygen-DarkGold-Red.png) | `#E75A50` | 4.9:1 | Red folders |
-| **Dark** | ![](../assets/cursors/Oxygen-DarkGold-Dark.png) | `#2A2A29` | 1.2:1 | Dark folders |
+| **Gold** (default) | ![](../assets/cursors/Oxygen-DarkGold-Gold.png) | ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` | 7.9:1 | Gold folders |
+| **Red** | ![](../assets/cursors/Oxygen-DarkGold-Red.png) | ![#E75A50](https://placehold.co/12x12/e75a50/e75a50.png) `#E75A50` | 4.9:1 | Red folders |
+| **Dark** | ![](../assets/cursors/Oxygen-DarkGold-Dark.png) | ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29` | 1.2:1 | Dark folders |
 
 Each variant is a normal folder here (`Oxygen-DarkGold-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.

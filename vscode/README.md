@@ -72,8 +72,8 @@ and background pairs the theme sets.
 Where a Neovim colour falls short, it is darkened (light theme) or lightened
 (dark theme) just far enough here:
 
-- **DarkGold**: types and links `#77838A` → `#7A858C`; warnings and modified files `#E58980` → `#E68E85`; added files and success marks `#A99B7A` → `#B2A587`.
-- **White Gold**: warnings and modified files `#6C5319` → `#624C17`; added files and success marks `#725C0A` → `#604D08`.
+- **DarkGold**: types and links ![#77838A](https://placehold.co/12x12/77838a/77838a.png) `#77838A` → ![#7A858C](https://placehold.co/12x12/7a858c/7a858c.png) `#7A858C`; warnings and modified files ![#E58980](https://placehold.co/12x12/e58980/e58980.png) `#E58980` → ![#E68E85](https://placehold.co/12x12/e68e85/e68e85.png) `#E68E85`; added files and success marks ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` → ![#B2A587](https://placehold.co/12x12/b2a587/b2a587.png) `#B2A587`.
+- **White Gold**: warnings and modified files ![#6C5319](https://placehold.co/12x12/6c5319/6c5319.png) `#6C5319` → ![#624C17](https://placehold.co/12x12/624c17/624c17.png) `#624C17`; added files and success marks ![#725C0A](https://placehold.co/12x12/725c0a/725c0a.png) `#725C0A` → ![#604D08](https://placehold.co/12x12/604d08/604d08.png) `#604D08`.
 
 On the highlighted current line, code can dip slightly under 4.5:1 and
 comments under 3:1.

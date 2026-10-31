@@ -18,16 +18,16 @@ Firefox's built-in Dark theme if you would rather not install the add-on.
 
 | Hex       | Role                      |
 |-----------|---------------------------|
-| `#1B1B1B` | Frame, page chrome        |
-| `#252525` | Panels, menus             |
-| `#3D382C` | Menu hover row            |
-| `#4A4334` | Menu pressed row          |
-| `#3D3D3D` | Separators, menu border   |
-| `#6d6d6d` | Muted text                |
-| `#C0AF7F` | Accent, URL bar border    |
-| `#a99b7a` | Secondary border / links  |
-| `#E1CE98` | Body text                 |
-| `#efebdc` | Hover text                |
+| ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B` | Frame, page chrome        |
+| ![#252525](https://placehold.co/12x12/252525/252525.png) `#252525` | Panels, menus             |
+| ![#3D382C](https://placehold.co/12x12/3d382c/3d382c.png) `#3D382C` | Menu hover row            |
+| ![#4A4334](https://placehold.co/12x12/4a4334/4a4334.png) `#4A4334` | Menu pressed row          |
+| ![#3D3D3D](https://placehold.co/12x12/3d3d3d/3d3d3d.png) `#3D3D3D` | Separators, menu border   |
+| ![#6d6d6d](https://placehold.co/12x12/6d6d6d/6d6d6d.png) `#6d6d6d` | Muted text                |
+| ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` | Accent, URL bar border    |
+| ![#a99b7a](https://placehold.co/12x12/a99b7a/a99b7a.png) `#a99b7a` | Secondary border / links  |
+| ![#E1CE98](https://placehold.co/12x12/e1ce98/e1ce98.png) `#E1CE98` | Body text                 |
+| ![#efebdc](https://placehold.co/12x12/efebdc/efebdc.png) `#efebdc` | Hover text                |
 
 ## Structure
 
@@ -53,13 +53,13 @@ its background; icons, the tab line and the URL bar ring clear 3:1.
 
 | Hex       | Where in the theme                          |
 |-----------|---------------------------------------------|
-| `#1B1B1B` | Frame, new tab, toolbar edges, text on coral selections |
-| `#2A2A29` | Toolbar, active tab, menus                  |
-| `#3C3C39` | URL bar field, button hover, separators, sidebar border |
-| `#EFEBDC` | Body text                                   |
-| `#A99B7A` | Inactive tab text, menu border              |
-| `#C0AF7F` | Icons, loading                              |
-| `#E75A50` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, attention |
+| ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B` | Frame, new tab, toolbar edges, text on coral selections |
+| ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29` | Toolbar, active tab, menus                  |
+| ![#3C3C39](https://placehold.co/12x12/3c3c39/3c3c39.png) `#3C3C39` | URL bar field, button hover, separators, sidebar border |
+| ![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC` | Body text                                   |
+| ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` | Inactive tab text, menu border              |
+| ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` | Icons, loading                              |
+| ![#E75A50](https://placehold.co/12x12/e75a50/e75a50.png) `#E75A50` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, attention |
 
 The colours are the published 1.3 exactly. The manifest is 1.4 because it adds
 a `description` and the `icons` (1.3 had none) and drops 1.3's blank
@@ -110,9 +110,9 @@ To undo: delete the two files and restart, or run the Monochrome / Tokyo Night
 - **Never set `--panel-*` or `--arrowpanel-*` on `:root`.** Those variables leak
   into the toolbar and blank the URL bar. They stay on the popup elements.
 - **Context menus do not get an extra element border.** A second stroke made
-  the right-click panel look detached. Hover is a gold-tinted `#3D382C` row
-  with a 3px gold rail on the left, not a full ring. (The old `#2E2E2E` was
-  almost invisible on `#252525`.)
+  the right-click panel look detached. Hover is a gold-tinted ![#3D382C](https://placehold.co/12x12/3d382c/3d382c.png) `#3D382C` row
+  with a 3px gold rail on the left, not a full ring. (The old ![#2E2E2E](https://placehold.co/12x12/2e2e2e/2e2e2e.png) `#2E2E2E` was
+  almost invisible on ![#252525](https://placehold.co/12x12/252525/252525.png) `#252525`.)
 - **Native menu styling is switched off** (`appearance: none`) on menus and
   menu rows. Without it the COSMIC/GTK hover paints over the colours above.
 - **`[_moz-menuactive="true"]` is required.** Firefox marks the active

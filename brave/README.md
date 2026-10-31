@@ -33,18 +33,18 @@ macOS refuse `.crx` files from outside the store, so use Load unpacked there.
 
 Same roles as Noir's Brave theme: icons and inactive tabs take gold, the
 active tab text takes coral. The Firefox theme keeps its inactive tabs on
-`#A99B7A` and its active tab on the text colour; Brave puts both accents on
-the tabs, as Noir does. The coral is `#E96960`, a touch lighter than the
-rice's `#E75A50` (4.09:1 on the toolbar), so the active tab text clears 4.5:1.
+![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` and its active tab on the text colour; Brave puts both accents on
+the tabs, as Noir does. The coral is ![#E96960](https://placehold.co/12x12/e96960/e96960.png) `#E96960`, a touch lighter than the
+rice's ![#E75A50](https://placehold.co/12x12/e75a50/e75a50.png) `#E75A50` (4.09:1 on the toolbar), so the active tab text clears 4.5:1.
 
 | Hex       | Where in the theme                                 |
 |-----------|----------------------------------------------------|
-| `#1B1B1B` | Frame, inactive tabs, new tab page (incognito too) |
-| `#2A2A29` | Toolbar and active tab                             |
-| `#3C3C39` | Address bar                                        |
-| `#EFEBDC` | Bookmark bar text, address bar text, new tab text  |
-| `#C0AF7F` | Toolbar icons, inactive tab text                   |
-| `#E96960` | Active tab text, new tab links                     |
+| ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B` | Frame, inactive tabs, new tab page (incognito too) |
+| ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29` | Toolbar and active tab                             |
+| ![#3C3C39](https://placehold.co/12x12/3c3c39/3c3c39.png) `#3C3C39` | Address bar                                        |
+| ![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC` | Bookmark bar text, address bar text, new tab text  |
+| ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` | Toolbar icons, inactive tab text                   |
+| ![#E96960](https://placehold.co/12x12/e96960/e96960.png) `#E96960` | Active tab text, new tab links                     |
 
 Every text colour clears WCAG AA (4.5:1) on its background; the lowest is the
 coral active tab text at 4.55:1.

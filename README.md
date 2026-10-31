@@ -29,17 +29,17 @@ Harbor Dark.
 
 | Role | Color | Hex |
 |------|-------|-----|
-| Background | ![#1b1b1b](https://placehold.co/12x12/1b1b1b/1b1b1b.png) Charcoal | `#1B1B1B` |
-| Foreground | ![#efebdc](https://placehold.co/12x12/efebdc/efebdc.png) Parchment | `#efebdc` |
-| Cream | ![#e1ce98](https://placehold.co/12x12/e1ce98/e1ce98.png) Bone | `#E1CE98` |
-| Gold | ![#c0af7f](https://placehold.co/12x12/c0af7f/c0af7f.png) Accent | `#C0AF7F` |
-| Brass | ![#a99b7a](https://placehold.co/12x12/a99b7a/a99b7a.png) Secondary | `#a99b7a` |
-| Salmon | ![#e58980](https://placehold.co/12x12/e58980/e58980.png) Cool accent | `#e58980` |
-| Coral | ![#e75a50](https://placehold.co/12x12/e75a50/e75a50.png) Headers | `#e75a50` |
-| Error | ![#f44336](https://placehold.co/12x12/f44336/f44336.png) Red | `#F44336` |
-| Slate | ![#77838a](https://placehold.co/12x12/77838a/77838a.png) Muted metal | `#77838a` |
-| Dim | ![#6d6d6d](https://placehold.co/12x12/6d6d6d/6d6d6d.png) Comments | `#6d6d6d` |
-| Olive | ![#817f68](https://placehold.co/12x12/817f68/817f68.png) Bright-black | `#817f68` |
+| Background | ![#1b1b1b](https://placehold.co/12x12/1b1b1b/1b1b1b.png) Charcoal | ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B` |
+| Foreground | ![#efebdc](https://placehold.co/12x12/efebdc/efebdc.png) Parchment | ![#efebdc](https://placehold.co/12x12/efebdc/efebdc.png) `#efebdc` |
+| Cream | ![#e1ce98](https://placehold.co/12x12/e1ce98/e1ce98.png) Bone | ![#E1CE98](https://placehold.co/12x12/e1ce98/e1ce98.png) `#E1CE98` |
+| Gold | ![#c0af7f](https://placehold.co/12x12/c0af7f/c0af7f.png) Accent | ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` |
+| Brass | ![#a99b7a](https://placehold.co/12x12/a99b7a/a99b7a.png) Secondary | ![#a99b7a](https://placehold.co/12x12/a99b7a/a99b7a.png) `#a99b7a` |
+| Salmon | ![#e58980](https://placehold.co/12x12/e58980/e58980.png) Cool accent | ![#e58980](https://placehold.co/12x12/e58980/e58980.png) `#e58980` |
+| Coral | ![#e75a50](https://placehold.co/12x12/e75a50/e75a50.png) Headers | ![#e75a50](https://placehold.co/12x12/e75a50/e75a50.png) `#e75a50` |
+| Error | ![#f44336](https://placehold.co/12x12/f44336/f44336.png) Red | ![#F44336](https://placehold.co/12x12/f44336/f44336.png) `#F44336` |
+| Slate | ![#77838a](https://placehold.co/12x12/77838a/77838a.png) Muted metal | ![#77838a](https://placehold.co/12x12/77838a/77838a.png) `#77838a` |
+| Dim | ![#6d6d6d](https://placehold.co/12x12/6d6d6d/6d6d6d.png) Comments | ![#6d6d6d](https://placehold.co/12x12/6d6d6d/6d6d6d.png) `#6d6d6d` |
+| Olive | ![#817f68](https://placehold.co/12x12/817f68/817f68.png) Bright-black | ![#817f68](https://placehold.co/12x12/817f68/817f68.png) `#817f68` |
 
 ---
 
@@ -128,7 +128,7 @@ Harbor Dark.
 
 Settings → Desktop → Appearance → **Dark** → **Import** → `cosmic/DarkGold.ron`
 
-Accent is gold `#C0AF7F`. Use the `+` control if you want a custom swatch.
+Accent is gold ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`. Use the `+` control if you want a custom swatch.
 
 Frosted glass is on in the `.ron` at `frosted: VeryLow` for windows, panel,
 applets and system UI (maximized apps stay solid). Adjust it on Appearance →
@@ -137,10 +137,10 @@ Style → Frosted glass after import; those sliders survive a theme switch.
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
 
 **Known COSMIC bug:** moving the frosted glass opacity / thickness sliders can
-reset `text_tint` to `#FFFFFF`. If your text turns white, re-import
-`cosmic/DarkGold-fixed-text.ron` (tint pinned to gold `#C0AF7F`), or
+reset `text_tint` to ![#FFFFFF](https://placehold.co/12x12/ffffff/ffffff.png) `#FFFFFF`. If your text turns white, re-import
+`cosmic/DarkGold-fixed-text.ron` (tint pinned to gold ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`), or
 `cosmic/DarkGold-Light-fixed-text.ron` in light mode, where white text on
-parchment is unreadable (dark gold `#655628`). Upstream fix proposed in
+parchment is unreadable (dark gold ![#655628](https://placehold.co/12x12/655628/655628.png) `#655628`). Upstream fix proposed in
 [libcosmic#1450](https://github.com/pop-os/libcosmic/pull/1450), not merged.
 
 ### Baseline settings
@@ -182,7 +182,7 @@ There are variants for both modes with gold or slate text (to pair with the
 gold text tint, or match btop). Previews and which to pick:
 [`cosmic-term/README.md`](cosmic-term/README.md).
 
-Nala progress boxes use Rich `green`. In this scheme that slot is gold `#C0AF7F`.
+Nala progress boxes use Rich `green`. In this scheme that slot is gold ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`.
 
 ---
 
@@ -207,15 +207,15 @@ background).
 
 | Role | Dark | Light |
 |------|------|-------|
-| Background | `#1B1B1B` | `#D9D1B8` |
-| Containers | `#2A2A29` / `#3C3C39` | `#EFEBDC` / `#F8F6EE` |
-| Text | `#EFEBDC` | `#1B1B1B` |
-| Accent (gold) | `#C0AF7F` | `#655628` |
-| Success (brass) | `#A99B7A` | `#5E5545` |
-| Salmon | `#E58980` | `#89433C` |
-| Coral | `#E75A50` | `#A23026` |
-| Error | `#F44336` | `#B01A1A` |
-| Slate | `#77838A` | `#4A545A` |
+| Background | ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B` | ![#D9D1B8](https://placehold.co/12x12/d9d1b8/d9d1b8.png) `#D9D1B8` |
+| Containers | ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29` / ![#3C3C39](https://placehold.co/12x12/3c3c39/3c3c39.png) `#3C3C39` | ![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC` / ![#F8F6EE](https://placehold.co/12x12/f8f6ee/f8f6ee.png) `#F8F6EE` |
+| Text | ![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC` | ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B` |
+| Accent (gold) | ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` | ![#655628](https://placehold.co/12x12/655628/655628.png) `#655628` |
+| Success (brass) | ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` | ![#5E5545](https://placehold.co/12x12/5e5545/5e5545.png) `#5E5545` |
+| Salmon | ![#E58980](https://placehold.co/12x12/e58980/e58980.png) `#E58980` | ![#89433C](https://placehold.co/12x12/89433c/89433c.png) `#89433C` |
+| Coral | ![#E75A50](https://placehold.co/12x12/e75a50/e75a50.png) `#E75A50` | ![#A23026](https://placehold.co/12x12/a23026/a23026.png) `#A23026` |
+| Error | ![#F44336](https://placehold.co/12x12/f44336/f44336.png) `#F44336` | ![#B01A1A](https://placehold.co/12x12/b01a1a/b01a1a.png) `#B01A1A` |
+| Slate | ![#77838A](https://placehold.co/12x12/77838a/77838a.png) `#77838A` | ![#4A545A](https://placehold.co/12x12/4a545a/4a545a.png) `#4A545A` |
 
 Spacing, corners, gaps and frosted glass match the dark theme.
 
@@ -313,7 +313,7 @@ the contrast notes are in [`vscode/README.md`](vscode/README.md).
 ## Telegram
 
 `telegram/cosmic-darkgold.tdesktop-theme` is a Telegram Desktop theme: steel
-text (the Harbor Dark Steel shade, lifted to `#A3AAAD` for 4.5:1 on hover and
+text (the Harbor Dark Steel shade, lifted to ![#A3AAAD](https://placehold.co/12x12/a3aaad/a3aaad.png) `#A3AAAD` for 4.5:1 on hover and
 bubble colours) on a charcoal chat list and background, dark-grey incoming and
 warm-brown outgoing bubbles, gold for the accent, links, unread badges and
 buttons (with charcoal text on them), brass for online status and read ticks.
@@ -361,7 +361,7 @@ Settings → Desktop → Wallpaper → **Add image** → pick a file from `backg
 **Cosmic-DarkGold**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Gold** `#C0AF7F` (default), **Red** `#E75A50` and **Dark** `#2A2A29` with gold symbols.
+three colors: **Gold** ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` (default), **Red** ![#E75A50](https://placehold.co/12x12/e75a50/e75a50.png) `#E75A50` and **Dark** ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29` with gold symbols.
 
 ![Cosmic-DarkGold folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-DarkGold.png)
 
@@ -460,7 +460,7 @@ existing `~/.config/bat/config` to `config.bak`.
 
 `starship/starship.toml` is close to the defaults with a `HH:MM` clock on the
 right. It uses the terminal's ANSI colours, so the COSMIC Terminal scheme
-above themes it (the clock's `yellow` is brass `#a99b7a`). `install.sh` backs
+above themes it (the clock's `yellow` is brass ![#a99b7a](https://placehold.co/12x12/a99b7a/a99b7a.png) `#a99b7a`). `install.sh` backs
 up any existing `~/.config/starship.toml` to `starship.toml.bak`.
 
 ```bash

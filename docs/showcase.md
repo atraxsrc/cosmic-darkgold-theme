@@ -8,19 +8,19 @@ describing itself, written in Markdown and rendered by **Postilla**.
 
 ## Palette
 
-Every text colour is checked against the window background `#1B1B1B`.
+Every text colour is checked against the window background ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B`.
 
 | Role | Hex | Contrast on background |
 |------|-----|------------------------|
-| Text | `#EFEBDC` | 14.4:1 |
-| Gold, accent | `#C0AF7F` | 7.9:1 |
-| Brass, success | `#A99B7A` | 6.3:1 |
-| Coral, headers | `#E75A50` | 4.9:1 |
-| Salmon | `#E58980` | 6.7:1 |
-| Error | `#F44336` | 4.7:1 |
-| Slate | `#77838A` | 4.4:1 |
+| Text | ![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC` | 14.4:1 |
+| Gold, accent | ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` | 7.9:1 |
+| Brass, success | ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` | 6.3:1 |
+| Coral, headers | ![#E75A50](https://placehold.co/12x12/e75a50/e75a50.png) `#E75A50` | 4.9:1 |
+| Salmon | ![#E58980](https://placehold.co/12x12/e58980/e58980.png) `#E58980` | 6.7:1 |
+| Error | ![#F44336](https://placehold.co/12x12/f44336/f44336.png) `#F44336` | 4.7:1 |
+| Slate | ![#77838A](https://placehold.co/12x12/77838a/77838a.png) `#77838A` | 4.4:1 |
 
-Containers sit one step away from the background at `#2A2A29`, which is
+Containers sit one step away from the background at ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29`, which is
 what frosted glass blurs into.
 
 ## Where the colours go
