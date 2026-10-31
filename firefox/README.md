@@ -6,7 +6,7 @@ Dark and Cosmic Night, with gray / lime swapped for gold and charcoal.
 Two layers, use one or both:
 
 1. **Theme (colours):** the [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/)
-   add-on (formerly harbordark) colours the toolbar, tabs and frame. This is the main look.
+   add-on colours the toolbar, tabs and frame. This is the main look.
 2. **Stylesheets (optional):** `chrome/userChrome.css` / `userContent.css`
    add rounded corners, gold menu hover, gold accents and a blank new-tab
    grid on top of whatever theme is active.

@@ -8,8 +8,6 @@ Pop!_OS 24.04 on COSMIC in Harbor Dark gold: desktop, terminal, shell, Firefox, 
 The dark half of a pair; the light sibling is
 [cosmic-whitegold-theme](https://github.com/atraxsrc/cosmic-whitegold-theme).
 
-Inspired by [omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-harbordark-theme).
-
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-1B1B1B?style=for-the-badge&logo=popos&logoColor=C0AF7F)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-C0AF7F?style=for-the-badge)
 ![DarkGold](https://img.shields.io/badge/Theme-Harbor_Dark-a99b7a?style=for-the-badge)
@@ -240,7 +238,7 @@ Two layers:
 
 1. **Theme (colours):** install
    **[cosmic-darkgold-theme on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/)**
-   (formerly harbordark). This is the main look.
+   This is the main look.
 2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, gold
    menu hover, gold accents and blank new-tab tiles on top of the add-on
    (they also work with Firefox's built-in Dark theme):
@@ -346,9 +344,8 @@ own theme.
 ## Wallpaper
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `darkgold-<subject>.png`.
-Four are the Harbor Dark originals from
-[omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-harbordark-theme)
-(MIT), unchanged, since Harbor Dark is this palette: the reaper (the one in the
+Four are the Harbor Dark originals (MIT), unchanged, since Harbor Dark is this
+palette: the reaper (the one in the
 screenshot), the Hyundai blueprint, the harbor in space and the space monolith. The
 rest are renders in gold and coral on charcoal: the geisha, The Greek eagle, and three
 new scenes, city, panel and tower.
@@ -666,7 +663,6 @@ puts the Pop cursor back.
 |------|-------------|
 | [Pop!_OS 24.04](https://pop.system76.com/) | Base OS by System76 |
 | [COSMIC DE](https://system76.com/cosmic) | Desktop environment |
-| [omarchy-harbordark-theme](https://github.com/HANCORE-linux/omarchy-harbordark-theme) | Palette inspiration |
 | [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/) | Firefox theme |
 | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
