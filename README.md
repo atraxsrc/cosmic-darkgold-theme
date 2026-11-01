@@ -12,6 +12,7 @@ The dark half of a pair; the light sibling is
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-C0AF7F?style=for-the-badge)
 ![DarkGold](https://img.shields.io/badge/Theme-Harbor_Dark-a99b7a?style=for-the-badge)
 ![Firefox](https://img.shields.io/badge/Firefox-DarkGold-e75a50?style=for-the-badge&logo=firefox-browser&logoColor=white)
+[![Gallery](https://img.shields.io/badge/Gallery-All_rices-c0af7f?style=for-the-badge)](https://atraxsrc.github.io/cosmic-rices/)
 ![License](https://img.shields.io/badge/License-MIT-6d6d6d?style=for-the-badge)
 
 </div>
