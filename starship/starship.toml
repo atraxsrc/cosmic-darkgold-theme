@@ -7,7 +7,7 @@
 # ANSI slots the COSMIC Terminal scheme already colours.
 
 format = "$all"
-right_format = "$time"
+# right_format = "$time"
 palette = "darkgold"
 
 [palettes.darkgold]
