@@ -485,11 +485,13 @@ The same file ships in cosmic-whitegold-theme.
 
 ```bash
 ./discord/install.sh
-# Settings → Vencord → Themes → Cosmic Darkgold
+# Settings → Vencord → Themes → Load missing themes → Cosmic Darkgold
 ```
 
-It copies the file into `~/.config/Vencord/themes/` and
-`~/.config/vesktop/themes/`, whichever exist. Discord renames its CSS
+It copies the file into every Vencord and Vesktop config folder it finds:
+`~/.config/Vencord/themes/`, `~/.config/vesktop/themes/`, and for the Flatpak
+builds `~/.var/app/com.discordapp.Discord/config/Vencord/themes/` and
+`~/.var/app/dev.vencord.Vesktop/config/vesktop/themes/`. Discord renames its CSS
 variables now and then; the file sets both the long-standing names and the
 2025 visual-refresh names. Text on the surfaces is 4.5:1 or better; the text on
 Discord's own accent-coloured buttons stays its white, at 2.2:1.
