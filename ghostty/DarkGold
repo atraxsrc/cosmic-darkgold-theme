@@ -1,0 +1,45 @@
+# DarkGold for Ghostty, part of cosmic-darkgold-theme (MIT).
+# Colours follow the COSMIC Terminal scheme (cosmic-term/).
+#
+# Install: ./ghostty/install.sh puts this in ~/.config/ghostty/themes/, then in
+# ~/.config/ghostty/config:
+#   theme = DarkGold
+# or, with the White Gold half installed too, following COSMIC's Dark / Light toggle:
+#   theme = dark:DarkGold,light:WhiteGold
+
+background = #1B1B1B
+foreground = #EFEBDC
+
+cursor-color = #EFEBDC
+cursor-text = #1B1B1B
+
+selection-background = #4E4E49
+selection-foreground = #EFEBDC
+
+split-divider-color = #817F68
+unfocused-split-fill = #1B1B1B
+
+# black
+palette = 0=#1B1B1B
+palette = 8=#817F68
+# red
+palette = 1=#F44336
+palette = 9=#F44336
+# green
+palette = 2=#C0AF7F
+palette = 10=#C0AF7F
+# yellow
+palette = 3=#A99B7A
+palette = 11=#A99B7A
+# blue
+palette = 4=#E58980
+palette = 12=#E58980
+# magenta
+palette = 5=#77838A
+palette = 13=#77838A
+# cyan
+palette = 6=#6D6D6D
+palette = 14=#6D6D6D
+# white
+palette = 7=#E1CE98
+palette = 15=#EFEBDC

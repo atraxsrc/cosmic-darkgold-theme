@@ -1,0 +1,88 @@
+/* DarkGold for GTK 3 and GTK 4 / libadwaita apps, part of cosmic-darkgold-theme (MIT).
+ * Only the named colours: the rice's window and container colours, its text
+ * colour, the accent for selection and buttons with the button text colour on
+ * it, success and warning. Widgets keep the stock Adwaita shapes.
+ *
+ * Install: ./gtk/install.sh copies this to ~/.config/gtk-3.0/ and
+ * ~/.config/gtk-4.0/ and imports it from gtk.css there. COSMIC's own
+ * "apply theme to GNOME apps" import stays; this one comes after it. */
+
+/* libadwaita / GTK 4 */
+@define-color accent_bg_color #C0AF7F;
+@define-color accent_fg_color #1B1B1B;
+@define-color accent_color #C0AF7F;
+@define-color destructive_bg_color #F44336;
+@define-color destructive_fg_color #1B1B1B;
+@define-color destructive_color #F44336;
+@define-color success_bg_color #A99B7A;
+@define-color success_fg_color #1B1B1B;
+@define-color success_color #A99B7A;
+@define-color warning_bg_color #C0AF7F;
+@define-color warning_fg_color #1B1B1B;
+@define-color warning_color #C0AF7F;
+@define-color error_bg_color #F44336;
+@define-color error_fg_color #1B1B1B;
+@define-color error_color #F44336;
+
+@define-color window_bg_color #1B1B1B;
+@define-color window_fg_color #EFEBDC;
+@define-color view_bg_color #1B1B1B;
+@define-color view_fg_color #EFEBDC;
+@define-color headerbar_bg_color #1B1B1B;
+@define-color headerbar_fg_color #EFEBDC;
+@define-color headerbar_border_color #817F68;
+@define-color headerbar_backdrop_color #1B1B1B;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
+@define-color headerbar_darker_shade_color rgba(0, 0, 0, 0.9);
+@define-color sidebar_bg_color #1B1B1B;
+@define-color sidebar_fg_color #EFEBDC;
+@define-color sidebar_backdrop_color #1B1B1B;
+@define-color sidebar_border_color #817F68;
+@define-color sidebar_shade_color rgba(0, 0, 0, 0.36);
+@define-color secondary_sidebar_bg_color #2A2A29;
+@define-color secondary_sidebar_fg_color #EFEBDC;
+@define-color secondary_sidebar_backdrop_color #2A2A29;
+@define-color secondary_sidebar_border_color #817F68;
+@define-color secondary_sidebar_shade_color rgba(0, 0, 0, 0.36);
+@define-color card_bg_color #2A2A29;
+@define-color card_fg_color #EFEBDC;
+@define-color card_shade_color rgba(0, 0, 0, 0.36);
+@define-color dialog_bg_color #2A2A29;
+@define-color dialog_fg_color #EFEBDC;
+@define-color popover_bg_color #2A2A29;
+@define-color popover_fg_color #EFEBDC;
+@define-color popover_shade_color rgba(0, 0, 0, 0.36);
+@define-color thumbnail_bg_color #2A2A29;
+@define-color thumbnail_fg_color #EFEBDC;
+@define-color shade_color rgba(0, 0, 0, 0.36);
+@define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
+
+/* GTK 3 */
+@define-color theme_bg_color #1B1B1B;
+@define-color theme_fg_color #EFEBDC;
+@define-color theme_base_color #1B1B1B;
+@define-color theme_text_color #EFEBDC;
+@define-color theme_selected_bg_color #C0AF7F;
+@define-color theme_selected_fg_color #1B1B1B;
+@define-color theme_unfocused_bg_color #1B1B1B;
+@define-color theme_unfocused_fg_color #A8A59B;
+@define-color theme_unfocused_base_color #1B1B1B;
+@define-color theme_unfocused_text_color #A8A59B;
+@define-color theme_unfocused_selected_bg_color #3C3C39;
+@define-color theme_unfocused_selected_fg_color #EFEBDC;
+@define-color insensitive_bg_color #2A2A29;
+@define-color insensitive_fg_color #6D6D6D;
+@define-color insensitive_base_color #1B1B1B;
+@define-color borders #817F68;
+@define-color unfocused_borders #4E4E49;
+@define-color content_view_bg #1B1B1B;
+@define-color placeholder_text_color #6D6D6D;
+@define-color wm_title #EFEBDC;
+@define-color wm_unfocused_title #A8A59B;
+@define-color wm_bg #1B1B1B;
+@define-color wm_border #817F68;
+@define-color wm_unfocused_border #4E4E49;
+
+/* links share the accent, as in Firefox and Cursor */
+@define-color link_color #C0AF7F;
+@define-color visited_link_color #C0AF7F;

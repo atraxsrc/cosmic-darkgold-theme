@@ -1,0 +1,80 @@
+# DarkGold for Alacritty, part of cosmic-darkgold-theme (MIT).
+# Colours follow the COSMIC Terminal scheme (cosmic-term/).
+#
+# Install: ./alacritty/install.sh puts this in ~/.config/alacritty/themes/,
+# then in ~/.config/alacritty/alacritty.toml:
+#   [general]
+#   import = ["~/.config/alacritty/themes/darkgold.toml"]
+# (Alacritty 0.13: a top-level `import = [...]` line instead.)
+
+[colors.primary]
+background = "#1B1B1B"
+foreground = "#EFEBDC"
+bright_foreground = "#EFEBDC"
+dim_foreground = "#6D6D6D"
+
+[colors.cursor]
+text = "#1B1B1B"
+cursor = "#EFEBDC"
+
+[colors.vi_mode_cursor]
+text = "#1B1B1B"
+cursor = "#C0AF7F"
+
+[colors.selection]
+text = "CellForeground"
+background = "#4E4E49"
+
+[colors.search.matches]
+foreground = "#1B1B1B"
+background = "#A99B7A"
+
+[colors.search.focused_match]
+foreground = "#1B1B1B"
+background = "#C0AF7F"
+
+[colors.hints.start]
+foreground = "#1B1B1B"
+background = "#C0AF7F"
+
+[colors.hints.end]
+foreground = "#1B1B1B"
+background = "#A99B7A"
+
+[colors.footer_bar]
+foreground = "#EFEBDC"
+background = "#2A2A29"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.normal]
+black   = "#1B1B1B"
+red     = "#F44336"
+green   = "#C0AF7F"
+yellow  = "#A99B7A"
+blue    = "#E58980"
+magenta = "#77838A"
+cyan    = "#6D6D6D"
+white   = "#E1CE98"
+
+[colors.bright]
+black   = "#817F68"
+red     = "#F44336"
+green   = "#C0AF7F"
+yellow  = "#A99B7A"
+blue    = "#E58980"
+magenta = "#77838A"
+cyan    = "#6D6D6D"
+white   = "#EFEBDC"
+
+[colors.dim]
+black   = "#1B1B1B"
+red     = "#F44336"
+green   = "#C0AF7F"
+yellow  = "#A99B7A"
+blue    = "#E58980"
+magenta = "#77838A"
+cyan    = "#6D6D6D"
+white   = "#E1CE98"

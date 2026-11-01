@@ -1,0 +1,37 @@
+# DarkGold for lazygit, part of cosmic-darkgold-theme (MIT). Only the colours: your
+# own ~/.config/lazygit/config.yml keeps the rest.
+#
+# Install: ./lazygit/install.sh puts this in ~/.config/lazygit/darkgold.yml and
+# zsh/darkgold.zsh sets LG_CONFIG_FILE to "config.yml,darkgold.yml" so lazygit
+# reads both (the later file wins). Without the zsh layer:
+#   export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/darkgold.yml"
+gui:
+  theme:
+    activeBorderColor:
+      - "#C0AF7F"
+      - bold
+    inactiveBorderColor:
+      - "#817F68"
+    searchingActiveBorderColor:
+      - "#C0AF7F"
+      - bold
+    optionsTextColor:
+      - "#A8A59B"
+    selectedLineBgColor:
+      - "#3C3C39"
+    inactiveViewSelectedLineBgColor:
+      - "#2A2A29"
+    cherryPickedCommitFgColor:
+      - "#1B1B1B"
+    cherryPickedCommitBgColor:
+      - "#A99B7A"
+    markedBaseCommitFgColor:
+      - "#1B1B1B"
+    markedBaseCommitBgColor:
+      - "#A99B7A"
+    unstagedChangesColor:
+      - "#F44336"
+    defaultFgColor:
+      - "#EFEBDC"
+  authorColors:
+    "*": "#A99B7A"

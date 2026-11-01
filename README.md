@@ -53,8 +53,12 @@ Harbor Dark.
 │   ├── palette.png              # the 16 terminal colours, under the title
 │   └── screenshot.png           # README screenshot
 ├── backgrounds/                 # wallpapers, darkgold-<subject>.png (see Wallpaper)
+├── alacritty
+│   ├── darkgold.toml            # Alacritty colour scheme
+│   └── install.sh
 ├── bat
-│   ├── config                   # --theme="ansi"
+│   ├── DarkGold.tmTheme         # bat syntax theme (delta uses it too)
+│   ├── config                   # --theme="DarkGold"
 │   └── install.sh
 ├── brave
 │   ├── theme                    # Chromium theme (manifest + icons), Load unpacked
@@ -79,6 +83,21 @@ Harbor Dark.
 │   ├── install.sh
 │   ├── uninstall.sh
 │   └── README.md
+├── delta
+│   ├── darkgold.gitconfig       # delta (git pager) colours, [include] it from ~/.gitconfig
+│   └── install.sh
+├── discord
+│   ├── cosmic-darkgold.theme.css # Vencord / Vesktop theme, DarkGold (dark) + White Gold (light)
+│   └── install.sh
+├── ghostty
+│   ├── DarkGold                 # Ghostty theme
+│   └── install.sh
+├── gtk
+│   ├── darkgold.css             # GTK 3 / 4 named colours for non-COSMIC apps
+│   └── install.sh
+├── helix
+│   ├── darkgold.toml            # Helix theme
+│   └── install.sh
 ├── icons
 │   └── install.sh               # Cosmic-DarkGold icon pack from cosmic-icon-themes
 ├── fastfetch
@@ -93,6 +112,15 @@ Harbor Dark.
 │   ├── install.sh
 │   └── README.md
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
+├── obsidian
+│   ├── cosmic-darkgold.css      # CSS snippet, DarkGold (dark) + White Gold (light)
+│   └── install.sh
+├── qt
+│   ├── DarkGold.conf            # qt5ct / qt6ct colour scheme
+│   └── install.sh
+├── starship
+│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
 │   ├── cosmic-darkgold.tdesktop-theme  # built theme, open this in Telegram
@@ -105,15 +133,21 @@ Harbor Dark.
 ├── scripts
 │   ├── update_system.sh         # nala + flatpak, Harbor Dark ANSI
 │   └── switch.sh                # make this the active rice (see Switching rice)
+├── kitty
+│   ├── DarkGold.conf            # kitty colour scheme
+│   └── install.sh
+├── lazygit
+│   ├── darkgold.yml             # lazygit colours only, stacked on your config.yml
+│   └── install.sh
 ├── lsd
 │   ├── config.yaml              # theme: custom
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
-├── starship
-│   ├── starship.toml            # prompt, clock on the right
+├── wezterm
+│   ├── darkgold.lua             # WezTerm colours, config.colors = require("darkgold")
 │   └── install.sh
 ├── zsh
-│   ├── darkgold.zsh             # LS_COLORS, highlighting colours, aliases, starship
+│   ├── darkgold.zsh             # LS_COLORS, highlighting colours, aliases, starship, lazygit
 │   └── install.sh
 ├── docs
 │   ├── screenshot-baseline.md   # the one-scene screenshot recipe shared by all the rices
@@ -378,6 +412,90 @@ login screen (asks for sudo); `--user` is the default.
 
 ---
 
+## GTK and Qt apps
+
+COSMIC colours GTK apps itself when Appearance → **Apply theme to GNOME apps**
+is on (the baseline config turns it on). `gtk/darkgold.css` is the same palette
+pinned by hand for GTK 3 and GTK 4 / libadwaita apps: windows and lists on
+![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B`, cards, popovers and dialogs on ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29`, text in ![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC`, selection
+and accent in ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` with ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B` text on it, ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` for
+success and ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` for warnings. It only sets the named colours, so
+widgets keep their stock shapes, and it also works where COSMIC's toggle does
+not reach (another desktop, Flatpak apps given access to `~/.config/gtk-4.0`).
+
+```bash
+./gtk/install.sh
+```
+
+It copies the file to `~/.config/gtk-3.0/` and `~/.config/gtk-4.0/` and adds
+`@import url("darkgold.css");` to `gtk.css` there, after COSMIC's own import so
+these colours win (backup in `gtk.css.bak`); another rice's import is
+commented out. Restart GTK apps.
+
+`qt/DarkGold.conf` is a colour scheme for [qt5ct](https://github.com/desktop-app/qt5ct)
+/ [qt6ct](https://github.com/trialuser02/qt6ct): windows on ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B`, text
+fields and lists on ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B`, buttons and tooltips on ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29`, text in
+![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC`, ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` for the highlight and links, placeholders in ![#6D6D6D](https://placehold.co/12x12/6d6d6d/6d6d6d.png) `#6D6D6D`,
+disabled text in ![#6D6D6D](https://placehold.co/12x12/6d6d6d/6d6d6d.png) `#6D6D6D`.
+
+```bash
+./qt/install.sh
+# qt6ct → Appearance → Color scheme → DarkGold, Palette: Custom → Apply
+```
+
+Qt apps read it with `QT_QPA_PLATFORMTHEME=qt6ct` (or `qt5ct`) in the
+environment; `~/.config/environment.d/` or your `~/.zshrc` is the place.
+
+Text and secondary text read at 4.5:1 or better on the window, container and
+field colours; disabled, placeholder and dim text, like comments elsewhere in
+the rice, at 2.8:1.
+
+---
+
+## Obsidian
+
+`obsidian/cosmic-darkgold.css` is a CSS snippet with both halves of the pair:
+DarkGold in dark mode, White Gold in light mode, so with Settings →
+Appearance → Base color scheme → **Adapt to system** Obsidian follows COSMIC's
+Dark / Light toggle. Editor on ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B`, sidebars on ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29`, text in ![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC`,
+links and accent in ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`, headings coloured like Neovim's
+(![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` / ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` / ![#77838A](https://placehold.co/12x12/77838a/77838a.png) `#77838A`), code and checkboxes in ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A`, tags
+in ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`. The same file ships in cosmic-whitegold-theme.
+
+```bash
+./obsidian/install.sh ~/path/to/vault
+# Settings → Appearance → CSS snippets → cosmic-darkgold
+```
+
+It copies the file into the vault's `.obsidian/snippets/`. Snippets are per
+vault, so run it once per vault.
+
+---
+
+## Discord
+
+`discord/cosmic-darkgold.theme.css` is a theme for [Vencord](https://vencord.dev/)
+and [Vesktop](https://github.com/Vencord/Vesktop), colours only: chat on
+![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B`, sidebars and inputs on ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29`, server list on ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B`, text in
+![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC`, channel names in ![#A8A59B](https://placehold.co/12x12/a8a59b/a8a59b.png) `#A8A59B`, accent, mentions and links in
+![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`, ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` for online and positive, ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` for
+warnings. The light half is White Gold and the dark half DarkGold, so
+with Appearance → Theme → **Sync with computer** it follows COSMIC's toggle.
+The same file ships in cosmic-whitegold-theme.
+
+```bash
+./discord/install.sh
+# Settings → Vencord → Themes → Cosmic Darkgold
+```
+
+It copies the file into `~/.config/Vencord/themes/` and
+`~/.config/vesktop/themes/`, whichever exist. Discord renames its CSS
+variables now and then; the file sets both the long-standing names and the
+2025 `--bg-*` set. Text on the surfaces is 4.5:1 or better; the text on
+Discord's own accent-coloured buttons stays its white, at 2.2:1.
+
+---
+
 ## Cursor
 
 **Oxygen** cursors recoloured to the icon colours, one per folder colour of the
@@ -411,12 +529,125 @@ Hardware / Software / Age boxes. `install.sh` backs up any existing
 fastfetch
 ```
 
+### kitty, Alacritty, WezTerm, Ghostty
+
+The COSMIC Terminal scheme for other terminals, one file each with the same
+sixteen ANSI colours, text in ![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC`, the cursor in ![#EFEBDC](https://placehold.co/12x12/efebdc/efebdc.png) `#EFEBDC` and the
+selection on ![#4E4E49](https://placehold.co/12x12/4e4e49/4e4e49.png) `#4E4E49`. Each installer copies the file next to that terminal's
+config and backs up what it replaces; the one include line you add is
+printed, and is in the comment at the top of each file:
+
+```bash
+./kitty/install.sh        # ~/.config/kitty/themes/DarkGold.conf       kitty.conf:     include themes/DarkGold.conf
+./alacritty/install.sh    # ~/.config/alacritty/themes/darkgold.toml   alacritty.toml: [general] import = ["~/.config/alacritty/themes/darkgold.toml"]
+./wezterm/install.sh      # ~/.config/wezterm/darkgold.lua             wezterm.lua:    config.colors = require("darkgold")
+./ghostty/install.sh      # ~/.config/ghostty/themes/DarkGold          config:         theme = DarkGold
+```
+
+Ghostty and WezTerm can follow COSMIC's Dark / Light toggle once the White Gold
+half is installed from its repo as well: `theme = dark:DarkGold,light:WhiteGold` in
+Ghostty, and in WezTerm
+
+```lua
+local dark = (wezterm.gui and wezterm.gui.get_appearance() or "Dark"):find("Dark")
+config.colors = require(dark and "darkgold" or "whitegold")
+```
+
+kitty and Alacritty have no such switch; include the other file instead.
+
+### starship
+
+`starship/starship.toml` is close to the defaults with the palette declared
+once as `[palettes.darkgold]` and used by name: the directory in ![#A8A59B](https://placehold.co/12x12/a8a59b/a8a59b.png) `#A8A59B`,
+the branch in ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A`, ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` for a dirty tree, a ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` prompt
+character that turns ![#F44336](https://placehold.co/12x12/f44336/f44336.png) `#F44336` after a failed command, a dim `HH:MM` clock on
+the right. Modules it does not style keep their defaults, which use the ANSI
+slots the COSMIC Terminal scheme colours. `zsh/darkgold.zsh` already runs
+`starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
+to `starship.toml.bak`.
+
+```bash
+./starship/install.sh
+```
+
+### bat
+
+`bat/DarkGold.tmTheme` is a syntax theme coloured the way Neovim is in this
+rice: keywords in ![#E75A50](https://placehold.co/12x12/e75a50/e75a50.png) `#E75A50`, strings in ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A`, functions in ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`, numbers
+in ![#E58980](https://placehold.co/12x12/e58980/e58980.png) `#E58980`, types in ![#77838A](https://placehold.co/12x12/77838a/77838a.png) `#77838A`, imports and escapes in ![#E1CE98](https://placehold.co/12x12/e1ce98/e1ce98.png) `#E1CE98`, italic
+comments in ![#6D6D6D](https://placehold.co/12x12/6d6d6d/6d6d6d.png) `#6D6D6D`, on the editor background ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B`. `zsh/darkgold.zsh`
+aliases `cat` to bat. `install.sh` copies the theme to `~/.config/bat/themes/`,
+rebuilds bat's cache so bat and delta can find it, and sets `--theme="DarkGold"`
+in `~/.config/bat/config` (backup in `config.bak`).
+
+```bash
+./bat/install.sh
+batcat README.md
+```
+
+### delta
+
+`delta/darkgold.gitconfig` colours [delta](https://github.com/dandavison/delta),
+the git diff pager: removed lines in ![#F44336](https://placehold.co/12x12/f44336/f44336.png) `#F44336` and added lines in
+![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` on the container ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29`, changed words on a solid block of
+those two colours with ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B` text, the same as Neovim's diff highlights;
+file names in ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`, commit hashes in ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A`, hunk headers in
+![#A8A59B](https://placehold.co/12x12/a8a59b/a8a59b.png) `#A8A59B` inside ![#817F68](https://placehold.co/12x12/817f68/817f68.png) `#817F68` boxes, line numbers. Code inside the diff
+uses the bat theme above, so install that first. `install.sh` copies the file
+to `~/.config/delta/` and prints the `[include]` to add to `~/.gitconfig`; it
+never edits that file.
+
+```bash
+./delta/install.sh
+```
+
+```ini
+# ~/.gitconfig
+[include]
+    path = ~/.config/delta/darkgold.gitconfig
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+```
+
+### lazygit
+
+`lazygit/darkgold.yml` holds only the `gui.theme` block: active border in
+![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`, inactive borders in ![#817F68](https://placehold.co/12x12/817f68/817f68.png) `#817F68`, the selected line on ![#3C3C39](https://placehold.co/12x12/3c3c39/3c3c39.png) `#3C3C39`,
+![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` and ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` marks for cherry-picked and base commits,
+unstaged changes in ![#F44336](https://placehold.co/12x12/f44336/f44336.png) `#F44336`, author names in ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A`. lazygit reads one
+config file, so instead of replacing your `~/.config/lazygit/config.yml` the
+installer drops the theme beside it and `zsh/darkgold.zsh` sets `LG_CONFIG_FILE`
+to both, your file first, so the colours win and your keybindings stay.
+
+```bash
+./lazygit/install.sh
+exec zsh
+```
+
+Without the zsh layer, export it yourself:
+`LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/darkgold.yml"`.
+
+### Helix
+
+`helix/darkgold.toml` is the Neovim colorscheme for [Helix](https://helix-editor.com/):
+same syntax roles, editor on ![#1B1B1B](https://placehold.co/12x12/1b1b1b/1b1b1b.png) `#1B1B1B`, status line and popups on ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29`,
+cursor and current line number in ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`, the mode shown as a solid
+![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` / ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` / ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` block. `install.sh` copies it to
+`~/.config/helix/themes/`.
+
+```bash
+./helix/install.sh
+# ~/.config/helix/config.toml:  theme = "darkgold"
+```
+
 ### zsh
 
 `zsh/darkgold.zsh` is the rice part of the shell only: `LS_COLORS` (also used
 by lsd for file names and by the completion menu), DarkGold colours for
-zsh-autosuggestions and zsh-syntax-highlighting, the lsd / bat / nvim aliases
-and the starship prompt. Your own `~/.zshrc` stays private and sources it, so
+zsh-autosuggestions and zsh-syntax-highlighting, the lsd / bat / nvim aliases,
+the lazygit theme file and the starship prompt. Your own `~/.zshrc` stays private and sources it, so
 PATH tweaks, display scaling and anything personal never land in this repo.
 
 Needs zsh + [oh-my-zsh](https://ohmyz.sh/). `install.sh` clones the two
@@ -443,28 +674,6 @@ whole theme. `install.sh` backs up existing files to `*.bak`.
 ```bash
 ./lsd/install.sh
 lsd -l
-```
-
-### bat
-
-`bat/config` is one line, `--theme="ansi"`: bat uses the terminal's 16 ANSI
-colours, so the COSMIC Terminal scheme themes it and it follows Harbor Light
-too. `zsh/darkgold.zsh` aliases `cat` to it. `install.sh` backs up any
-existing `~/.config/bat/config` to `config.bak`.
-
-```bash
-./bat/install.sh
-```
-
-### starship
-
-`starship/starship.toml` is close to the defaults with a `HH:MM` clock on the
-right. It uses the terminal's ANSI colours, so the COSMIC Terminal scheme
-above themes it (the clock's `yellow` is brass ![#a99b7a](https://placehold.co/12x12/a99b7a/a99b7a.png) `#a99b7a`). `install.sh` backs
-up any existing `~/.config/starship.toml` to `starship.toml.bak`.
-
-```bash
-./starship/install.sh
 ```
 
 ### Neovim
@@ -570,11 +779,29 @@ chsh -s "$(command -v zsh)"
 # shell + terminal tools (see Terminal extras above)
 ./zsh/install.sh
 ./lsd/install.sh
-./bat/install.sh
-./starship/install.sh
 ./fastfetch/install.sh
 ./nvim/install.sh
 mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
+
+./starship/install.sh
+./bat/install.sh
+./delta/install.sh          # then the [include] it prints, in ~/.gitconfig
+./lazygit/install.sh
+./helix/install.sh          # then theme = "darkgold" in helix/config.toml
+
+# other terminals, one include line each (see Terminal extras above)
+./kitty/install.sh
+./alacritty/install.sh
+./wezterm/install.sh
+./ghostty/install.sh
+
+# gtk + qt apps (see GTK and Qt apps above)
+./gtk/install.sh
+./qt/install.sh             # then qt6ct → Color scheme → DarkGold
+
+# obsidian + discord, both halves in one file (see above)
+./obsidian/install.sh ~/path/to/vault
+./discord/install.sh
 
 # wallpaper
 # Settings → Wallpaper → Add image → a file from backgrounds/ (see Wallpaper above)
@@ -615,8 +842,11 @@ It backs up every file it replaces, then:
   The terminal scheme and icon theme are only replaced when the current one is
   not already a DarkGold variant, so a dimmer text variant or another icon colour
   survives. Icons stay as they are until `./icons/install.sh` has run.
-- runs the fastfetch, lsd, bat, starship, Neovim and Claude Desktop installers and sets
-  btop's `color_theme`
+- runs the fastfetch, lsd, bat, starship, delta, lazygit, kitty, Alacritty,
+  WezTerm, Ghostty, Helix, GTK, Qt, Discord, Neovim and Claude Desktop
+  installers and sets btop's `color_theme`. The terminal, editor and Qt
+  installers only copy theme files; the include line you added once stays,
+  switch it by hand when the file name differs between rices
 - moves every other rice's LazyVim spec from `~/.config/nvim/lua/plugins/` to
   `~/.config/nvim/rice-off/` (LazyVim loads every spec there and the last
   colorscheme wins); your own specs stay
@@ -633,6 +863,7 @@ The GUI steps it cannot do are printed at the end:
 4. Settings → Wallpaper → a file from `backgrounds/`
 5. Claude Desktop: Ctrl+Shift+T → `cosmic-darkgold`, Appearance → Dark
 6. `exec zsh`, restart Neovim (`:Lazy clean` drops plugins only the old specs used)
+7. Obsidian: `./obsidian/install.sh <vault>`; delta: the `[include]` path in `~/.gitconfig`
 
 Skip 1 and 2 when that slot already holds DarkGold. The first time on this rice,
 run [Setup](#setup) once for the fonts, icons and cursor.
@@ -666,10 +897,16 @@ puts the Pop cursor back.
 | [cosmic-darkgold-theme](https://addons.mozilla.org/en-US/firefox/addon/cosmic-darkgold-theme/) | Firefox theme |
 | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
-| [oh-my-zsh](https://ohmyz.sh/) | zsh framework + plugins |
 | [starship](https://starship.rs/) | Prompt |
+| [bat](https://github.com/sharkdp/bat) | `cat` with syntax highlighting |
+| [delta](https://github.com/dandavison/delta) | git diff pager |
+| [lazygit](https://github.com/jesseduffield/lazygit) | git TUI |
+| [Helix](https://helix-editor.com/) | Editor |
+| [kitty](https://sw.kovidgoyal.net/kitty/), [Alacritty](https://alacritty.org/), [WezTerm](https://wezterm.org/), [Ghostty](https://ghostty.org/) | Other terminals |
+| [qt6ct](https://github.com/trialuser02/qt6ct) | Qt colour scheme |
+| [Vencord](https://vencord.dev/) / [Vesktop](https://github.com/Vencord/Vesktop) | Discord theme host |
+| [oh-my-zsh](https://ohmyz.sh/) | zsh framework + plugins |
 | [lsd](https://github.com/lsd-rs/lsd) | `ls` with icons and colours |
-| [bat](https://github.com/sharkdp/bat) | `cat` with syntax highlighting (ANSI theme) |
 | [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-DarkGold), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
 | [gitleaks](https://github.com/gitleaks/gitleaks) | Secret scan on every commit |
 | [Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors) | Cursor theme (KDE Oxygen designs), recoloured to the icon colours, COSMIC-fixed |
