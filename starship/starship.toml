@@ -2,12 +2,11 @@
 # DarkGold starship prompt, part of cosmic-darkgold-theme (MIT).
 # Close to the defaults, coloured from the palette: secondary-text directory,
 # branch in the yellow slot, the warning colour for a dirty tree, a success
-# prompt character (the error colour after a failed command), HH:MM clock on
-# the right. Modules without a style here keep their defaults, which use the
-# ANSI slots the COSMIC Terminal scheme already colours.
+# prompt character (the error colour after a failed command). Modules without a
+# style here keep their defaults, which use the ANSI slots the COSMIC Terminal
+# scheme already colours.
 
 format = "$all"
-# right_format = "$time"
 palette = "darkgold"
 
 [palettes.darkgold]
@@ -70,7 +69,7 @@ style = "warning"
 disabled = true
 
 [time]
-disabled = false
+disabled = true
 time_format = "%H:%M"
 format = "[$time]($style)"
 style = "dim"

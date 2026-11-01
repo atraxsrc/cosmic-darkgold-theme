@@ -120,7 +120,7 @@ Harbor Dark.
 │   ├── DarkGold.conf            # qt5ct / qt6ct colour scheme
 │   └── install.sh
 ├── starship
-│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   ├── starship.toml            # prompt, palette colours
 │   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
@@ -563,8 +563,7 @@ kitty and Alacritty have no such switch; include the other file instead.
 `starship/starship.toml` is close to the defaults with the palette declared
 once as `[palettes.darkgold]` and used by name: the directory in ![#A8A59B](https://placehold.co/12x12/a8a59b/a8a59b.png) `#A8A59B`,
 the branch in ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A`, ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` for a dirty tree, a ![#A99B7A](https://placehold.co/12x12/a99b7a/a99b7a.png) `#A99B7A` prompt
-character that turns ![#F44336](https://placehold.co/12x12/f44336/f44336.png) `#F44336` after a failed command, a dim `HH:MM` clock on
-the right. Modules it does not style keep their defaults, which use the ANSI
+character that turns ![#F44336](https://placehold.co/12x12/f44336/f44336.png) `#F44336` after a failed command. Modules it does not style keep their defaults, which use the ANSI
 slots the COSMIC Terminal scheme colours. `zsh/darkgold.zsh` already runs
 `starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
 to `starship.toml.bak`.
