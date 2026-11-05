@@ -112,6 +112,8 @@ Harbor Dark.
 │   │   └── userContent.css
 │   ├── install.sh
 │   └── README.md
+├── notesnook
+│   └── cosmic-darkgold.json     # Notesnook theme, DarkGold (dark)
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── obsidian
 │   ├── cosmic-darkgold.css      # CSS snippet, DarkGold (dark) + White Gold (light)
@@ -470,6 +472,22 @@ in ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`. The same 
 
 It copies the file into the vault's `.obsidian/snippets/`. Snippets are per
 vault, so run it once per vault.
+
+---
+
+## Notesnook
+
+`notesnook/cosmic-darkgold.json` is a [Notesnook](https://notesnook.com/) theme for DarkGold,
+built from the same palette as the Obsidian snippet: window, list and sidebar
+backgrounds, text, accent, selection and the error / success colours. A
+Notesnook theme holds one colour scheme, so the White Gold half ships as
+`notesnook/cosmic-whitegold.json` in cosmic-whitegold-theme; load both if you switch between
+dark and light.
+
+```text
+Notesnook → Settings → Appearance → Themes → Load from file
+→ pick notesnook/cosmic-darkgold.json → Set as default
+```
 
 ---
 
