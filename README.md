@@ -179,8 +179,9 @@ command applies this rice's frosted glass too, and so does `themebox flip`.
 
 Accent is gold ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`. Use the `+` control if you want a custom swatch.
 
-Frosted glass is on in the `.ron` at `frosted: VeryLow` for windows, panel,
-applets and system UI (maximized apps stay solid). Adjust it on Appearance →
+Frosted glass is on in the `.ron` at `frosted: Low` with an opacity table of
+0.66 to 0.96, the same as every other rice, for windows, panel, applets and
+system UI (maximized apps stay solid). Adjust it on Appearance →
 Style → Frosted glass after import; the Import button keeps those sliders.
 
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
@@ -199,14 +200,13 @@ parchment is unreadable (dark gold ![#655628](https://placehold.co/12x12/655628/
 
 | Where | Setting |
 |-------|---------|
-| Fonts | Interface `Maple Mono Normal`, monospace `Maple Mono Normal NFM` |
+| Fonts | Interface `Maple Normal UI`, monospace `Maple Mono Normal`, both in `fonts/` |
 | Icons | Cosmic-DarkGold-Dark |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Harbor Dark / Harbor Light |
 
-Install the [Maple fonts](https://github.com/subframe7536/maple-font/releases)
-(Maple Mono Normal and Maple Mono Normal NFM) and the Cosmic-DarkGold icons (see
-Icons below) and import the terminal schemes first, then:
+Run `./fonts/install.sh` (the two COSMIC fonts, shipped in this repo), install the
+Cosmic-DarkGold icons (see Icons below) and import the terminal schemes first, then:
 
 ```bash
 ./cosmic/install.sh
@@ -840,7 +840,8 @@ mkdir -p ~/.config/btop/themes && cp btop/DarkGold.theme ~/.config/btop/themes/
 # icons (Cosmic-DarkGold, see Icons above)
 ./icons/install.sh
 
-# fonts (https://github.com/subframe7536/maple-font), then
+./fonts/install.sh                  # Maple Normal UI + Maple Mono Normal for COSMIC
+# Maple Mono Normal NFM for the terminals (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
 ./cosmic/install.sh
 
