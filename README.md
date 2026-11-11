@@ -200,7 +200,7 @@ parchment is unreadable (dark gold ![#655628](https://placehold.co/12x12/655628/
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Mono Normal`, monospace `Maple Mono Normal NFM` |
-| Icons | Cosmic-DarkGold-Gold |
+| Icons | Cosmic-DarkGold-Dark |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Harbor Dark / Harbor Light |
 
@@ -409,13 +409,13 @@ Settings → Desktop → Wallpaper → **Add image** → pick a file from `backg
 **Cosmic-DarkGold**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Gold** ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F` (default), **Red** ![#E75A50](https://placehold.co/12x12/e75a50/e75a50.png) `#E75A50` and **Dark** ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29` with gold symbols.
+three colors: **Gold** ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`, **Red** ![#E75A50](https://placehold.co/12x12/e75a50/e75a50.png) `#E75A50` and **Dark** ![#2A2A29](https://placehold.co/12x12/2a2a29/2a2a29.png) `#2A2A29` (default) with gold symbols.
 
 ![Cosmic-DarkGold folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-DarkGold.png)
 
 ```bash
-./icons/install.sh                  # Gold folders
-./icons/install.sh --variant Red    # or Dark
+./icons/install.sh                 # Dark folders
+./icons/install.sh --variant Gold  # or Red
 ```
 
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,

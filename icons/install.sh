@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Install the Cosmic-DarkGold icon pack and make it the COSMIC icon theme.
 #
-#   ./icons/install.sh                    # Gold folders: download, install, activate
-#   ./icons/install.sh --variant Red      # another folder color (see --list)
+#   ./icons/install.sh                    # Dark folders: download, install, activate
+#   ./icons/install.sh --variant Gold     # another folder color (see --list)
 #   ./icons/install.sh --user             # to ~/.local/share/icons, just you (default)
 #   ./icons/install.sh --system           # to /usr/share/icons, all users + login (sudo)
 #   ./icons/install.sh --no-activate      # install only, keep the current icon theme
@@ -17,7 +17,7 @@ set -euo pipefail
 
 THEME="DarkGold"
 VARIANTS=(Gold Red Dark)
-VARIANT="Gold"
+VARIANT="Dark"
 BASE="${COSMIC_ICONS_URL:-https://github.com/atraxsrc/cosmic-icon-themes/releases/latest/download}"
 USER_DEST="$HOME/.local/share/icons"
 SYSTEM_DEST="${COSMIC_ICONS_SYSTEM_DIR:-/usr/share/icons}"
