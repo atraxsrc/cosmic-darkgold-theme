@@ -166,11 +166,22 @@ Harbor Dark.
 
 Settings → Desktop → Appearance → **Dark** → **Import** → `cosmic/DarkGold.ron`
 
+Or from a terminal in this folder, which takes the whole file:
+
+```bash
+cosmic-settings appearance import cosmic/DarkGold.ron
+```
+
+Since the COSMIC builds after 1.11.0 the **Import** button keeps your current
+frosted glass (level, on/off per surface, opacity), gaps and active hint, and
+takes only the colours, corners, fonts and icons from the file. The terminal
+command applies this rice's frosted glass too, and so does `themebox flip`.
+
 Accent is gold ![#C0AF7F](https://placehold.co/12x12/c0af7f/c0af7f.png) `#C0AF7F`. Use the `+` control if you want a custom swatch.
 
 Frosted glass is on in the `.ron` at `frosted: VeryLow` for windows, panel,
 applets and system UI (maximized apps stay solid). Adjust it on Appearance →
-Style → Frosted glass after import; those sliders survive a theme switch.
+Style → Frosted glass after import; the Import button keeps those sliders.
 
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
 

@@ -72,6 +72,19 @@
     frosted_panel: true,
     frosted_applets: true,
     frosted_maximized_apps: false,
+    icon_theme: "Cosmic-DarkGold-Gold",
+    font: (
+        family: "Maple Mono Normal",
+        weight: Normal,
+        stretch: Normal,
+        style: Normal,
+    ),
+    mono_font: (
+        family: "Maple Mono Normal NFM",
+        weight: Normal,
+        stretch: Normal,
+        style: Normal,
+    ),
     alpha_map: (
         extremely_low: 0.96615,
         extremely_low_2: 0.94307,
